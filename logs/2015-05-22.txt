@@ -15,3 +15,292 @@
 [2015-05-22 13:42:16]framework.controller.construct.after: Home
 [2015-05-22 13:42:16]framework.router.dispatch.after: home/index, home, index
 Average: 0.0205885, Longest: 0.095166, Shortest: 0.00011699999999998, Total: 0.329675
+[2015-05-22 14:00:28]framework.configuration.initialize.before: ini
+[2015-05-22 14:00:28]framework.configuration.initialize.after: ini
+[2015-05-22 14:00:28]framework.database.initialize.before: 
+[2015-05-22 14:00:28]framework.database.initialize.after: mysql
+[2015-05-22 14:00:28]framework.cache.initialize.before: 
+[2015-05-22 14:00:28]framework.cache.initialize.after: memcached
+[2015-05-22 14:00:28]framework.session.initialize.before: 
+[2015-05-22 14:00:28]framework.session.initialize.after: server
+[2015-05-22 14:00:28]framework.router.dispatch.before: home/index
+[2015-05-22 14:00:28]framework.controller.construct.before: Home
+[2015-05-22 14:00:28]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:00:28]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:00:28]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:00:28]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:00:28]framework.controller.construct.after: Home
+[2015-05-22 14:00:28]framework.router.dispatch.after: home/index, home, index
+Average: 0.0220324375, Longest: 0.121709, Shortest: 0.00022, Total: 0.353431
+[2015-05-22 14:05:36]framework.configuration.initialize.before: ini
+[2015-05-22 14:05:36]framework.configuration.initialize.after: ini
+[2015-05-22 14:05:36]framework.database.initialize.before: 
+[2015-05-22 14:05:36]framework.database.initialize.after: mysql
+[2015-05-22 14:05:36]framework.cache.initialize.before: 
+[2015-05-22 14:05:36]framework.cache.initialize.after: memcached
+[2015-05-22 14:05:36]framework.session.initialize.before: 
+[2015-05-22 14:05:36]framework.session.initialize.after: server
+[2015-05-22 14:05:36]framework.router.dispatch.before: home/index
+[2015-05-22 14:05:36]framework.controller.construct.before: Home
+[2015-05-22 14:05:36]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:05:36]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:05:36]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:05:36]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:05:36]framework.controller.construct.after: Home
+[2015-05-22 14:05:36]framework.router.dispatch.after: home/index, home, index
+Average: 0.00244725, Longest: 0.008981, Shortest: 9.4999999999956E-5, Total: 0.039494
+[2015-05-22 14:05:38]framework.configuration.initialize.before: ini
+[2015-05-22 14:05:38]framework.configuration.initialize.after: ini
+[2015-05-22 14:05:38]framework.database.initialize.before: 
+[2015-05-22 14:05:38]framework.database.initialize.after: mysql
+[2015-05-22 14:05:38]framework.cache.initialize.before: 
+[2015-05-22 14:05:38]framework.cache.initialize.after: memcached
+[2015-05-22 14:05:38]framework.session.initialize.before: 
+[2015-05-22 14:05:38]framework.session.initialize.after: server
+[2015-05-22 14:05:38]framework.router.dispatch.before: home/index
+[2015-05-22 14:05:38]framework.controller.construct.before: Home
+[2015-05-22 14:05:38]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:05:38]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:05:38]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:05:38]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:05:38]framework.controller.construct.after: Home
+[2015-05-22 14:05:38]framework.router.dispatch.after: home/index, home, index
+Average: 0.0024211875, Longest: 0.008906, Shortest: 9.2999999999996E-5, Total: 0.039017
+[2015-05-22 14:05:39]framework.configuration.initialize.before: ini
+[2015-05-22 14:05:39]framework.configuration.initialize.after: ini
+[2015-05-22 14:05:39]framework.database.initialize.before: 
+[2015-05-22 14:05:39]framework.database.initialize.after: mysql
+[2015-05-22 14:05:39]framework.cache.initialize.before: 
+[2015-05-22 14:05:39]framework.cache.initialize.after: memcached
+[2015-05-22 14:05:39]framework.session.initialize.before: 
+[2015-05-22 14:05:39]framework.session.initialize.after: server
+[2015-05-22 14:05:39]framework.router.dispatch.before: home/index
+[2015-05-22 14:05:39]framework.controller.construct.before: Home
+[2015-05-22 14:05:39]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:05:39]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:05:39]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:05:39]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:05:39]framework.controller.construct.after: Home
+[2015-05-22 14:05:39]framework.router.dispatch.after: home/index, home, index
+Average: 0.0026265625, Longest: 0.009421, Shortest: 8.9000000000006E-5, Total: 0.042195
+[2015-05-22 14:05:40]framework.configuration.initialize.before: ini
+[2015-05-22 14:05:40]framework.configuration.initialize.after: ini
+[2015-05-22 14:05:40]framework.database.initialize.before: 
+[2015-05-22 14:05:40]framework.database.initialize.after: mysql
+[2015-05-22 14:05:40]framework.cache.initialize.before: 
+[2015-05-22 14:05:40]framework.cache.initialize.after: memcached
+[2015-05-22 14:05:40]framework.session.initialize.before: 
+[2015-05-22 14:05:40]framework.session.initialize.after: server
+[2015-05-22 14:05:40]framework.router.dispatch.before: home/index
+[2015-05-22 14:05:40]framework.controller.construct.before: Home
+[2015-05-22 14:05:40]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:05:40]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:05:40]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:05:40]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:05:40]framework.controller.construct.after: Home
+[2015-05-22 14:05:40]framework.router.dispatch.after: home/index, home, index
+Average: 0.0026850625, Longest: 0.0097120000000001, Shortest: 9.5999999999985E-5, Total: 0.043157
+[2015-05-22 14:26:20]framework.configuration.initialize.before: ini
+[2015-05-22 14:26:20]framework.configuration.initialize.after: ini
+[2015-05-22 14:26:20]framework.database.initialize.before: 
+[2015-05-22 14:26:20]framework.database.initialize.after: mysql
+[2015-05-22 14:26:20]framework.cache.initialize.before: 
+[2015-05-22 14:26:20]framework.cache.initialize.after: memcached
+[2015-05-22 14:26:20]framework.session.initialize.before: 
+[2015-05-22 14:26:20]framework.session.initialize.after: server
+[2015-05-22 14:26:20]framework.router.dispatch.before: home/index
+[2015-05-22 14:26:20]framework.controller.construct.before: Home
+[2015-05-22 14:26:20]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:26:20]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:26:20]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:26:20]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:26:20]framework.controller.construct.after: Home
+[2015-05-22 14:26:20]framework.router.dispatch.after: home/index, home, index
+Average: 0.00229125, Longest: 0.00781, Shortest: 9.4000000000011E-5, Total: 0.037018
+[2015-05-22 14:26:21]framework.configuration.initialize.before: ini
+[2015-05-22 14:26:21]framework.configuration.initialize.after: ini
+[2015-05-22 14:26:21]framework.database.initialize.before: 
+[2015-05-22 14:26:21]framework.database.initialize.after: mysql
+[2015-05-22 14:26:21]framework.cache.initialize.before: 
+[2015-05-22 14:26:21]framework.cache.initialize.after: memcached
+[2015-05-22 14:26:21]framework.session.initialize.before: 
+[2015-05-22 14:26:21]framework.session.initialize.after: server
+[2015-05-22 14:26:21]framework.router.dispatch.before: home/index
+[2015-05-22 14:26:21]framework.controller.construct.before: Home
+[2015-05-22 14:26:21]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:26:21]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:26:21]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:26:21]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:26:21]framework.controller.construct.after: Home
+[2015-05-22 14:26:21]framework.router.dispatch.after: home/index, home, index
+Average: 0.0026500625, Longest: 0.009314, Shortest: 8.9000000000006E-5, Total: 0.042575
+[2015-05-22 14:26:22]framework.configuration.initialize.before: ini
+[2015-05-22 14:26:22]framework.configuration.initialize.after: ini
+[2015-05-22 14:26:22]framework.database.initialize.before: 
+[2015-05-22 14:26:22]framework.database.initialize.after: mysql
+[2015-05-22 14:26:22]framework.cache.initialize.before: 
+[2015-05-22 14:26:22]framework.cache.initialize.after: memcached
+[2015-05-22 14:26:22]framework.session.initialize.before: 
+[2015-05-22 14:26:22]framework.session.initialize.after: server
+[2015-05-22 14:26:22]framework.router.dispatch.before: home/index
+[2015-05-22 14:26:22]framework.controller.construct.before: Home
+[2015-05-22 14:26:22]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:26:22]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:26:22]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:26:22]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:26:22]framework.controller.construct.after: Home
+[2015-05-22 14:26:22]framework.router.dispatch.after: home/index, home, index
+Average: 0.0026693125, Longest: 0.010554, Shortest: 9.1000000000008E-5, Total: 0.042883
+[2015-05-22 14:26:23]framework.configuration.initialize.before: ini
+[2015-05-22 14:26:23]framework.configuration.initialize.after: ini
+[2015-05-22 14:26:23]framework.database.initialize.before: 
+[2015-05-22 14:26:23]framework.database.initialize.after: mysql
+[2015-05-22 14:26:23]framework.cache.initialize.before: 
+[2015-05-22 14:26:23]framework.cache.initialize.after: memcached
+[2015-05-22 14:26:23]framework.session.initialize.before: 
+[2015-05-22 14:26:23]framework.session.initialize.after: server
+[2015-05-22 14:26:23]framework.router.dispatch.before: home/index
+[2015-05-22 14:26:23]framework.controller.construct.before: Home
+[2015-05-22 14:26:23]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:26:23]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 14:26:23]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:26:23]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 14:26:23]framework.controller.construct.after: Home
+[2015-05-22 14:26:23]framework.router.dispatch.after: home/index, home, index
+Average: 0.00237275, Longest: 0.0081260000000001, Shortest: 0.00014799999999993, Total: 0.038283
+[2015-05-22 16:15:11]framework.configuration.initialize.before: ini
+[2015-05-22 16:15:11]framework.configuration.initialize.after: ini
+[2015-05-22 16:15:11]framework.database.initialize.before: 
+[2015-05-22 16:15:11]framework.database.initialize.after: mysql
+[2015-05-22 16:15:11]framework.cache.initialize.before: 
+[2015-05-22 16:15:11]framework.cache.initialize.after: memcached
+[2015-05-22 16:15:11]framework.session.initialize.before: 
+[2015-05-22 16:15:11]framework.session.initialize.after: server
+[2015-05-22 16:15:11]framework.router.dispatch.before: home/index
+[2015-05-22 16:15:11]framework.controller.construct.before: Home
+[2015-05-22 16:15:11]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:15:11]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:15:11]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 16:15:11]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 16:15:11]framework.controller.construct.after: Home
+[2015-05-22 16:15:11]framework.router.dispatch.after: home/index, home, index
+Average: 0.0249321875, Longest: 0.128914, Shortest: 9.7999999999931E-5, Total: 0.399298
+[2015-05-22 16:17:05]framework.configuration.initialize.before: ini
+[2015-05-22 16:17:05]framework.configuration.initialize.after: ini
+[2015-05-22 16:17:05]framework.database.initialize.before: 
+[2015-05-22 16:17:05]framework.database.initialize.after: mysql
+[2015-05-22 16:17:05]framework.cache.initialize.before: 
+[2015-05-22 16:17:05]framework.cache.initialize.after: memcached
+[2015-05-22 16:17:05]framework.session.initialize.before: 
+[2015-05-22 16:17:05]framework.session.initialize.after: server
+[2015-05-22 16:17:05]framework.router.dispatch.before: home/index
+[2015-05-22 16:17:05]framework.controller.construct.before: Home
+[2015-05-22 16:17:05]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:17:05]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:17:05]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 16:17:05]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 16:17:05]framework.controller.construct.after: Home
+[2015-05-22 16:17:05]framework.router.dispatch.after: home/index, home, index
+Average: 0.0024059375, Longest: 0.008806, Shortest: 0.000109, Total: 0.03881
+[2015-05-22 16:17:26]framework.configuration.initialize.before: ini
+[2015-05-22 16:17:26]framework.configuration.initialize.after: ini
+[2015-05-22 16:17:26]framework.database.initialize.before: 
+[2015-05-22 16:17:26]framework.database.initialize.after: mysql
+[2015-05-22 16:17:26]framework.cache.initialize.before: 
+[2015-05-22 16:17:26]framework.cache.initialize.after: memcached
+[2015-05-22 16:17:26]framework.session.initialize.before: 
+[2015-05-22 16:17:26]framework.session.initialize.after: server
+[2015-05-22 16:17:26]framework.router.dispatch.before: home/index
+[2015-05-22 16:17:26]framework.controller.construct.before: Home
+[2015-05-22 16:17:26]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:17:26]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:17:26]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 16:17:26]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 16:17:26]framework.controller.construct.after: Home
+[2015-05-22 16:17:26]framework.router.dispatch.after: home/index, home, index
+Average: 0.0024650625, Longest: 0.008128, Shortest: 9.8000000000001E-5, Total: 0.039675
+[2015-05-22 16:17:34]framework.configuration.initialize.before: ini
+[2015-05-22 16:17:34]framework.configuration.initialize.after: ini
+[2015-05-22 16:17:34]framework.database.initialize.before: 
+[2015-05-22 16:17:34]framework.database.initialize.after: mysql
+[2015-05-22 16:17:34]framework.cache.initialize.before: 
+[2015-05-22 16:17:34]framework.cache.initialize.after: memcached
+[2015-05-22 16:17:34]framework.session.initialize.before: 
+[2015-05-22 16:17:34]framework.session.initialize.after: server
+[2015-05-22 16:17:34]framework.router.dispatch.before: home/index
+[2015-05-22 16:17:34]framework.controller.construct.before: Home
+[2015-05-22 16:17:34]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:17:34]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:17:34]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 16:17:34]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 16:17:34]framework.controller.construct.after: Home
+[2015-05-22 16:17:34]framework.router.dispatch.after: home/index, home, index
+Average: 0.002266875, Longest: 0.0088, Shortest: 9.5999999999985E-5, Total: 0.036464
+[2015-05-22 16:18:20]framework.configuration.initialize.before: ini
+[2015-05-22 16:18:20]framework.configuration.initialize.after: ini
+[2015-05-22 16:18:20]framework.database.initialize.before: 
+[2015-05-22 16:18:20]framework.database.initialize.after: mysql
+[2015-05-22 16:18:20]framework.cache.initialize.before: 
+[2015-05-22 16:18:20]framework.cache.initialize.after: memcached
+[2015-05-22 16:18:20]framework.session.initialize.before: 
+[2015-05-22 16:18:20]framework.session.initialize.after: server
+[2015-05-22 16:18:20]framework.router.dispatch.before: home/index
+[2015-05-22 16:18:20]framework.controller.construct.before: Home
+[2015-05-22 16:18:20]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:18:20]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:18:20]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 16:18:20]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/index.html
+[2015-05-22 16:18:20]framework.controller.construct.after: Home
+[2015-05-22 16:18:20]framework.router.dispatch.after: home/index, home, index
+Average: 0.002653, Longest: 0.01077, Shortest: 9.1999999999981E-5, Total: 0.042648
+[2015-05-22 16:19:21]framework.configuration.initialize.before: ini
+[2015-05-22 16:19:21]framework.configuration.initialize.after: ini
+[2015-05-22 16:19:21]framework.database.initialize.before: 
+[2015-05-22 16:19:21]framework.database.initialize.after: mysql
+[2015-05-22 16:19:21]framework.cache.initialize.before: 
+[2015-05-22 16:19:21]framework.cache.initialize.after: memcached
+[2015-05-22 16:19:21]framework.session.initialize.before: 
+[2015-05-22 16:19:21]framework.session.initialize.after: server
+[2015-05-22 16:19:21]framework.router.dispatch.before: home/about
+[2015-05-22 16:19:21]framework.controller.construct.before: Home
+[2015-05-22 16:19:21]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:19:21]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:19:21]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/about.html
+[2015-05-22 16:19:21]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/about.html
+[2015-05-22 16:19:21]framework.controller.construct.after: Home
+[2015-05-22 16:19:21]framework.router.dispatch.after: home/about, home, about
+Average: 0.002426, Longest: 0.008122, Shortest: 9.899999999996E-5, Total: 0.039244
+[2015-05-22 16:24:37]framework.configuration.initialize.before: ini
+[2015-05-22 16:24:37]framework.configuration.initialize.after: ini
+[2015-05-22 16:24:37]framework.database.initialize.before: 
+[2015-05-22 16:24:37]framework.database.initialize.after: mysql
+[2015-05-22 16:24:37]framework.cache.initialize.before: 
+[2015-05-22 16:24:37]framework.cache.initialize.after: memcached
+[2015-05-22 16:24:37]framework.session.initialize.before: 
+[2015-05-22 16:24:37]framework.session.initialize.after: server
+[2015-05-22 16:24:37]framework.router.dispatch.before: home/about
+[2015-05-22 16:24:37]framework.controller.construct.before: Home
+[2015-05-22 16:24:37]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:24:37]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:24:37]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/about.html
+[2015-05-22 16:24:37]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/about.html
+[2015-05-22 16:24:37]framework.controller.construct.after: Home
+[2015-05-22 16:24:37]framework.router.dispatch.after: home/about, home, about
+Average: 0.0023586875, Longest: 0.009686, Shortest: 9.2999999999996E-5, Total: 0.038161
+[2015-05-22 16:25:09]framework.configuration.initialize.before: ini
+[2015-05-22 16:25:09]framework.configuration.initialize.after: ini
+[2015-05-22 16:25:09]framework.database.initialize.before: 
+[2015-05-22 16:25:09]framework.database.initialize.after: mysql
+[2015-05-22 16:25:09]framework.cache.initialize.before: 
+[2015-05-22 16:25:09]framework.cache.initialize.after: memcached
+[2015-05-22 16:25:09]framework.session.initialize.before: 
+[2015-05-22 16:25:09]framework.session.initialize.after: server
+[2015-05-22 16:25:09]framework.router.dispatch.before: home/about
+[2015-05-22 16:25:09]framework.controller.construct.before: Home
+[2015-05-22 16:25:09]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:25:09]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/layouts/standard.html
+[2015-05-22 16:25:09]framework.view.construct.before: C:/wamp/www/TaskAlgo/application/views/home/about.html
+[2015-05-22 16:25:09]framework.view.construct.after: C:/wamp/www/TaskAlgo/application/views/home/about.html
+[2015-05-22 16:25:09]framework.controller.construct.after: Home
+[2015-05-22 16:25:09]framework.router.dispatch.after: home/about, home, about
+Average: 0.0022495, Longest: 0.00705, Shortest: 9.1000000000063E-5, Total: 0.036162
