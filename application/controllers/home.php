@@ -28,6 +28,9 @@ class Home extends Controller {
     public function terms() {
         
     }
+    public function signup() {
+        
+    }
     
     public function tasks() {
         
