@@ -3,7 +3,7 @@ ob_start();
 define("DEBUG", TRUE);
 
 // 1. define the default path for includes
-//define("APP_PATH", dirname(dirname(__FILE__)));
+define("CDN", "http://localhost/TaskAlgo/public/assets/");
 
 define("APP_PATH", str_replace(DIRECTORY_SEPARATOR, "/", dirname(__FILE__)));
 

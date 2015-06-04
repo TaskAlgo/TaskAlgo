@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="SwiftMVC Framework">
-    <meta name="author" content="Faizan Ayubi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SwiftMVC Framework</title>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.html">
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <title>TaskSpere</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
+        <link href="{echo CDN}css/style.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <link href="{echo CDN}css/owl.carousel.css" rel="stylesheet">
+        <link href="{echo CDN}css/owl.theme.css" rel="stylesheet">
 
-</head>
 
-<body>
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
 
-    {include navigation.html}
-    {ayield action}
+        <script>paceOptions = {elements: true};</script>
+        <script src="assets/js/pace.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            {include navigation.html}
+            {ayield action}
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+            <div class="footer" id="footer">
+                <div class="container">
+                    <ul class=" pull-left navbar-link footer-nav">
+                        <li><a href="index-2.html"> Home </a> <a href="about-us.html"> About us </a> <a href="#"> Terms and Conditions </a> <a href="#"> Privacy Policy </a> <a href="contact.html"> Contact us </a> <a href="faq.html"> FAQ </a>
+                    </ul>
+                    <ul class=" pull-right navbar-link footer-nav">
+                        <li> &copy; 2015 BootClassified </li>
+                    </ul>
+                </div>
+            </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        </div>
 
-</body>
 
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+        <script src="{echo CDN}js/owl.carousel.min.js"></script>
+
+        <script src="{echo CDN}js/jquery.matchHeight-min.js"></script>
+
+        <script src="{echo CDN}js/hideMaxListItem.js"></script>
+
+        <script src="{echo CDN}plugins/jquery.fs.scroller/jquery.fs.scroller.js"></script>
+        <script src="{echo CDN}plugins/jquery.fs.selecter/jquery.fs.selecter.js"></script>
+
+        <script src="{echo CDN}js/script.js"></script>
+
+        <script type="text/javascript" src="{echo CDN}plugins/autocomplete/jquery.mockjax.js"></script>
+        <script type="text/javascript" src="{echo CDN}plugins/autocomplete/jquery.autocomplete.js"></script>
+        <script type="text/javascript" src="{echo CDN}plugins/autocomplete/usastates.js"></script>
+        <script type="text/javascript" src="{echo CDN}plugins/autocomplete/autocomplete-demo.js"></script>
+    </body>
 </html>
