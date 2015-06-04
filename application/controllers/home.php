@@ -16,5 +16,21 @@ class Home extends Controller {
     public function about() {
         
     }
+    
+    public function contact() {
+        
+    }
+    
+    public function faq() {
+        
+    }
+    
+    public function terms() {
+        
+    }
+    
+    public function tasks() {
+        
+    }
 
 }
