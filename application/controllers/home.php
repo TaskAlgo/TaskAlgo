@@ -38,5 +38,7 @@ class Home extends Controller {
     public function tasks() {
         
     }
-
+    public function privacy() {
+        
+    }
 }
