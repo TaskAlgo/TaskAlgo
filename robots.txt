@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /assets/others/
+Sitemap: http://tasksphere.com/sitemap.xml

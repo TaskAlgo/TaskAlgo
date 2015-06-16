@@ -3,8 +3,9 @@ ob_start();
 define("DEBUG", TRUE);
 
 // 1. define the default path for includes
-define("CDN", "http://localhost/TaskAlgo/public/assets/");
-
+define("CDN", "http://assets.tasksphere.com/");
+define("APP", "http://tasksphere.com/");
+define("URL", "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 define("APP_PATH", str_replace(DIRECTORY_SEPARATOR, "/", dirname(__FILE__)));
 
 try {
