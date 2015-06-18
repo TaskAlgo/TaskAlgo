@@ -31,9 +31,6 @@ class Home extends Controller {
     public function signup() {
         
     }
-    public function login() {
-        
-    }
     
     public function tasks() {
         
