@@ -5,8 +5,12 @@
  *
  * @author Faizan Ayubi
  */
-class Customer {
+use Framework\Registry as Registry;
+
+class Customer extends Main {
+
     public function register() {
         
     }
+
 }
