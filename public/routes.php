@@ -7,11 +7,6 @@ $routes = array(
         "pattern" => "login",
         "controller" => "main",
         "action" => "login"
-    ),
-    array(
-        "pattern" => "home",
-        "controller" => "home",
-        "action" => "index"
     )
 );
 
