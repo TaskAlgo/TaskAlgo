@@ -28,6 +28,17 @@ class User extends Shared\Model {
      * @label email
      */
     protected $_email;
+    
+    /**
+     * @column
+     * @readwrite
+     * @type text
+     * @length 55
+     * 
+     * @validate alpha
+     * @label gender
+     */
+    protected $_gender;
 
     /**
      * @column
