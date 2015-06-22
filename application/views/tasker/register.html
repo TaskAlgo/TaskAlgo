@@ -8,31 +8,18 @@
                         <div class="col-sm-12">
                             <form class="form-horizontal">
                                 <fieldset>
-                                    
 
                                     <div class="form-group required">
-                                        <label class="col-md-4 control-label">First Name <sup>*</sup></label>
+                                        <label class="col-md-4 control-label">Full Name <sup>*</sup></label>
                                         <div class="col-md-6">
-                                            <input name="" placeholder="First Name" class="form-control input-md" required="" type="text">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group required">
-                                        <label class="col-md-4 control-label">Last Name <sup>*</sup></label>
-                                        <div class="col-md-6">
-                                            <input name="textinput" placeholder="Last Name" class="form-control input-md" type="text">
+                                            <input name="name" placeholder="Full Name" class="form-control input-md" required="" type="text">
                                         </div>
                                     </div>
 
                                     <div class="form-group required">
                                         <label class="col-md-4 control-label">Phone Number <sup>*</sup></label>
                                         <div class="col-md-6">
-                                            <input name="textinput" placeholder="Phone Number" class="form-control input-md" type="text">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <small> Hide the phone number on the published ads.</small> </label>
-                                            </div>
+                                            <input name="phone" placeholder="Phone Number" class="form-control input-md" type="text" required="">
                                         </div>
                                     </div>
 
@@ -41,29 +28,24 @@
                                         <div class="col-md-6">
                                             <div class="radio">
                                                 <label for="Gender-0">
-                                                    <input name="Gender" id="Gender-0" value="1" checked="checked" type="radio">
+                                                    <input name="gender" id="Gender-0" value="male" checked="checked" type="radio">
                                                     Male </label>
                                             </div>
                                             <div class="radio">
                                                 <label for="Gender-1">
-                                                    <input name="Gender" id="Gender-1" value="2" type="radio">
+                                                    <input name="Gender" id="Gender-1" value="female" type="radio">
                                                     Female </label>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label" for="textarea">About Yourself</label>
-                                        <div class="col-md-6">
-                                            <textarea class="form-control" id="textarea" name="textarea">About Yourself</textarea>
-                                        </div>
-                                    </div>
                                     <div class="form-group required">
                                         <label for="inputEmail3" class="col-md-4 control-label">Email <sup>*</sup></label>
                                         <div class="col-md-6">
-                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                            <input name="email" type="email" class="form-control" id="inputEmail3" placeholder="Email">
                                         </div>
                                     </div>
+
                                     <div class="form-group required">
                                         <label for="inputPassword3" class="col-md-4 control-label">Password </label>
                                         <div class="col-md-6">
@@ -71,6 +53,7 @@
                                             <p class="help-block">At least 5 characters  </p>
                                         </div>
                                     </div>
+
                                     <div class="form-group">
                                         <label class="col-md-4 control-label"></label>
                                         <div class="col-md-8">
@@ -80,8 +63,10 @@
                                                     I have read and agree to the <a href="terms-conditions.html">Terms & Conditions</a> </label>
                                             </div>
                                             <div style="clear:both"></div>
-                                            <a class="btn btn-primary" href="account-home.html">Register</a> </div>
+                                            <a class="btn btn-primary" href="account-home.html">Register</a>
+                                        </div>
                                     </div>
+                                    
                                 </fieldset>
                             </form>
                         </div>
@@ -102,7 +87,7 @@
                         <h3><strong>Get your task done and Choose a payment method</strong></h3>
                         <p>Get your task done by our verified taskers and choose a payment method(Online or COD)</p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

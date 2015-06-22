@@ -16,6 +16,7 @@ class Customer extends Main {
                 "name" => RequestMethods::post("name"),
                 "email" => RequestMethods::post("email"),
                 "phone" => RequestMethods::post("phone"),
+                "gender" => RequestMethods::post("gender"),
                 "password" => sha1(RequestMethods::post("password"))
             ));
             $user->save();
