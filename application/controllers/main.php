@@ -38,6 +38,17 @@ class Main extends Controller {
         $this->setUser(false);
         self::redirect("/home");
     }
+    
+    public function noview() {
+        $this->willRenderLayoutView = false;
+        $this->willRenderActionView = false;
+    }
+    
+    public function sync() {
+        $this->noview();
+        $db = Registry::get("database");
+        //$db->sync(new Zone());
+    }
 
     /**
      * Logs Messages

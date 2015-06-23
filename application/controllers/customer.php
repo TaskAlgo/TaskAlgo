@@ -14,13 +14,12 @@ class Customer extends Main {
         if (RequestMethods::post("action") == "addCustomer") {
             $user = new User(array(
                 "name" => RequestMethods::post("name"),
-                "email" => RequestMethods::post("email"),
+                "email" => RequestMethods::post("email", ""),
                 "phone" => RequestMethods::post("phone"),
-                "gender" => RequestMethods::post("gender"),
-                "password" => sha1(RequestMethods::post("password"))
+                "gender" => RequestMethods::post("gender", ""),
+                "password" => sha1(RequestMethods::post("password", rand(10000, 999999)))
             ));
             $user->save();
-            
         }
     }
 
