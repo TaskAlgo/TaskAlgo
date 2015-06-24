@@ -50,5 +50,13 @@ class Job extends Shared\Model {
      * @type datetime
      */
     protected $_scheduled;
-
+    
+    /**
+     * @column
+     * @readwrite
+     * @type text
+     * 
+     * @label status
+     */
+    protected $_status;
 }

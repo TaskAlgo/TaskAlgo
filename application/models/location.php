@@ -12,32 +12,10 @@ class Location extends Shared\Model {
      * @type text
      * @length 255
      * 
-     * @validate required, alpha, min(3), max(255)
-     * @label full name
+     * @validate required, min(3), max(255)
+     * @label street name
      */
-    protected $_address;
-    
-    /**
-     * @column
-     * @readwrite
-     * @type text
-     * @length 255
-     * 
-     * @validate required, alpha, min(3), max(255)
-     * @label full name
-     */
-    protected $_latitude;
-    
-    /**
-     * @column
-     * @readwrite
-     * @type text
-     * @length 255
-     * 
-     * @validate required, alpha, min(3), max(255)
-     * @label full name
-     */
-    protected $_longitude;
+    protected $_street;
     
     /**
      * @column

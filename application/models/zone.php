@@ -12,8 +12,8 @@ class Zone extends Shared\Model {
      * @type text
      * @length 255
      * 
-     * @validate required, alpha, min(3), max(255)
-     * @label full name
+     * @validate required, min(4), max(255)
+     * @label pincode
      */
     protected $_pincode;
     
@@ -23,8 +23,19 @@ class Zone extends Shared\Model {
      * @type text
      * @length 255
      * 
-     * @validate required, alpha, min(3), max(255)
+     * @validate required, min(3)
      * @label full name
+     */
+    protected $_landmark;
+    
+    /**
+     * @column
+     * @readwrite
+     * @type text
+     * @length 255
+     * 
+     * @validate required, min(3), max(255)
+     * @label city
      */
     protected $_city;
 }
