@@ -90,6 +90,28 @@ class Users extends Controller {
 
         $view = $this->getActionView();
     }
+    
+    public function bookService() {
+        $this->seo(array(
+            "title" => "TaskSphere",
+            "keywords" => "TaskSphere",
+            "description" => "TaskSphere",
+            "view" => $this->getLayoutView()
+        ));
+
+        $view = $this->getActionView();
+    }
+    
+    public function bookConfirm() {
+        $this->seo(array(
+            "title" => "TaskSphere",
+            "keywords" => "TaskSphere",
+            "description" => "TaskSphere",
+            "view" => $this->getLayoutView()
+        ));
+
+        $view = $this->getActionView();
+    }
 
     /**
      * Logs Out the User
