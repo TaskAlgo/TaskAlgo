@@ -10,7 +10,7 @@ use Framework\Registry as Registry;
 use Framework\RequestMethods as RequestMethods;
 
 class Users extends Controller {
-    
+
     /**
      * @before _secure
      */
@@ -22,23 +22,23 @@ class Users extends Controller {
             "view" => $this->getLayoutView()
         ));
         $view = $this->getActionView();
-        
-        if(RequestMethods::post("action") == "saveUser"){
+
+        if (RequestMethods::post("action") == "saveUser") {
             $user = User::first(array("id = ?" => $this->user->id));
             $user->name = RequestMethods::post("name");
             $user->email = RequestMethods::post("email");
             $user->gender = RequestMethods::post("gender");
             $user->phone = RequestMethods::post("phone");
-            
+
             $user->save();
             $view->set("user", $user);
             $view->set("success", "Account Updated Successfully");
         }
-        
-        if(RequestMethods::post("action") == "changePassword"){
+
+        if (RequestMethods::post("action") == "changePassword") {
             $user = User::first(array("id = ?" => $this->user->id));
             $password = RequestMethods::post("opassword");
-            if($user->password == sha1($password)){
+            if ($user->password == sha1($password)) {
                 $user->password = sha1(RequestMethods::post("npassword"));
                 $user->save();
                 $view->set("success", "Password Changed Successfulyy");
@@ -48,30 +48,49 @@ class Users extends Controller {
         }
     }
 
-    public function login($ep = NULL, $password = NULL) {
-        if (isset($ep)) {
-            if(strpos($ep, "@")){
-                $user = User::first(array("email = ?" => $ep, "password = ?" => sha1($password)));
-            } else {
-                $user = User::first(array("phone = ?" => $ep, "password = ?" => sha1($password)));
-            }
-        }
-        
-        if(RequestMethods::post("login")){
+    /**
+     * Logins the user to session and rediect to profile
+     */
+    public function login() {
+        $this->seo(array(
+            "title" => "TaskSphere",
+            "keywords" => "TaskSphere",
+            "description" => "TaskSphere",
+            "view" => $this->getLayoutView()
+        ));
+
+        $view = $this->getActionView();
+
+        if (RequestMethods::post("action") == "login") {
             $ep = RequestMethods::post("ep");
             $password = RequestMethods::post("password");
-            if(strpos($ep, "@")){
+
+            if (strpos($ep, "@")) {
                 $user = User::first(array("email = ?" => $ep, "password = ?" => sha1($password)));
             } else {
                 $user = User::first(array("phone = ?" => $ep, "password = ?" => sha1($password)));
             }
-        }
-        
-        if(isset($user)){
-            $this->user = $info["user"];
+
+            if (isset($user)) {
+                $this->user = $user;
+                self::redirect("/users");
+            } else {
+                $view->set("success", "Incorrect email/phone or password");
+            }
         }
     }
     
+    public function forgotpassword() {
+        $this->seo(array(
+            "title" => "TaskSphere",
+            "keywords" => "TaskSphere",
+            "description" => "TaskSphere",
+            "view" => $this->getLayoutView()
+        ));
+
+        $view = $this->getActionView();
+    }
+
     /**
      * Logs Out the User
      */
@@ -79,7 +98,7 @@ class Users extends Controller {
         $this->setUser(false);
         self::redirect("/home");
     }
-    
+
     /**
      * Disabled HTML View
      */
@@ -87,7 +106,7 @@ class Users extends Controller {
         $this->willRenderLayoutView = false;
         $this->willRenderActionView = false;
     }
-    
+
     public function sync() {
         $this->noview();
         $db = Registry::get("database");

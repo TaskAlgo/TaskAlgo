@@ -5,7 +5,7 @@
 $routes = array(
     array(
         "pattern" => "login",
-        "controller" => "main",
+        "controller" => "users",
         "action" => "login"
     ),
     array(
