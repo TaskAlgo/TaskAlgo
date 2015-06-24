@@ -7,9 +7,16 @@
 use Framework\Registry as Registry;
 use Framework\RequestMethods as RequestMethods;
 
-class Tasker extends Main {
+class Taskers extends Main {
     public function index() {
+        $this->seo(array(
+            "title" => "Super Taskers",
+            "keywords" => "account",
+            "description" => "account",
+            "view" => $this->getLayoutView()
+        ));
         
+        $view = $this->getActionView();
     }
     
     public function register() {
@@ -22,12 +29,6 @@ class Tasker extends Main {
                 "password" => sha1(RequestMethods::post("password"))
             ));
             $user->save();
-            
-            if(isset($user->email)){
-                $this->login($user->email, $user->password);
-            } else{
-                $this->login($user->phone, $user->password);
-            }
             
             self::redirect("/tasker/skills");
         }

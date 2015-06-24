@@ -7,8 +7,9 @@
  */
 use Shared\Controller as Controller;
 use Framework\Registry as Registry;
+use Framework\RequestMethods as RequestMethods;
 
-class Main extends Controller {
+class Users extends Controller {
 
     public function login($ep = NULL, $password = NULL) {
         if (isset($ep)) {
@@ -19,9 +20,9 @@ class Main extends Controller {
             }
         }
         
-        if(Framework\RequestMethods::post("login")){
-            $ep = Framework\RequestMethods::post("ep");
-            $password = Framework\RequestMethods::post("password");
+        if(RequestMethods::post("login")){
+            $ep = RequestMethods::post("ep");
+            $password = RequestMethods::post("password");
             if(strpos($ep, "@")){
                 $user = User::first(array("email = ?" => $ep, "password = ?" => sha1($password)));
             } else {
