@@ -18,7 +18,7 @@ class Applicant extends Shared\Model {
      * @readwrite
      * @type integer
      */
-    protected $_payment;
+    protected $_cost;
     
     /**
      * @column
