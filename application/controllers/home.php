@@ -5,9 +5,8 @@
  *
  * @author Faizan Ayubi
  */
-use Framework\Controller as Controller;
 
-class Home extends Controller {
+class Home extends Users {
 
     public function index() {
         

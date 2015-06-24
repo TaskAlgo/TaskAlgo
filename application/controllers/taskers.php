@@ -7,7 +7,8 @@
 use Framework\Registry as Registry;
 use Framework\RequestMethods as RequestMethods;
 
-class Taskers extends Main {
+class Taskers extends Users {
+    
     public function index() {
         $this->seo(array(
             "title" => "Super Taskers",

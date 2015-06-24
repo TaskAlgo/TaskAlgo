@@ -8,7 +8,7 @@
 use Framework\Registry as Registry;
 use Framework\RequestMethods as RequestMethods;
 
-class Customers extends Main {
+class Customers extends Users {
     
     public function index() {
         $this->seo(array(
