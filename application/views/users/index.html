@@ -1,0 +1,173 @@
+<div class="main-container">
+    <div class="container">
+        <div class="row">
+            {if(isset($success))}
+            <div class="col-md-12 page-content">
+                <div class="inner-box category-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="alert alert-success pgray  alert-lg" role="alert">
+                                <p>{$success}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/if}
+            <div class="col-sm-3 page-sidebar">
+                <aside>
+                    <div class="inner-box">
+                        <div class="user-panel-sidebar">
+                            <div class="collapse-box">
+                                <h5 class="collapse-title no-border"> My Profile <a href="#MyClassified" data-toggle="collapse" class="pull-right"><i class="fa fa-angle-down"></i></a></h5>
+                                <div class="panel-collapse collapse in" id="MyClassified">
+                                    <ul class="acc-list">
+                                        <li><a class="active" href="/"><i class="icon-home"></i> Personal Home </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="collapse-box">
+                                <h5 class="collapse-title"> My Tasks <a href="#MyAds" data-toggle="collapse" class="pull-right"><i class="fa fa-angle-down"></i></a></h5>
+                                <div class="panel-collapse collapse in" id="MyAds">
+                                    <ul class="acc-list">
+                                        <li><a href="account-myads.html"><i class="icon-docs"></i> My ads <span class="badge">42</span> </a></li>
+                                        <li><a href="account-favourite-ads.html"><i class="icon-heart"></i> Favourite ads <span class="badge">42</span> </a></li>
+                                        <li><a href="account-saved-search.html"><i class="icon-star-circled"></i> Saved search <span class="badge">42</span> </a></li>
+                                        <li><a href="account-archived-ads.html"><i class="icon-folder-close"></i> Archived ads <span class="badge">42</span></a></li>
+                                        <li><a href="account-pending-approval-ads.html"><i class="icon-hourglass"></i> Pending approval <span class="badge">42</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="collapse-box">
+                                <h5 class="collapse-title"> Terminate Account <a href="#TerminateAccount" data-toggle="collapse" class="pull-right"><i class="fa fa-angle-down"></i></a></h5>
+                                <div class="panel-collapse collapse in" id="TerminateAccount">
+                                    <ul class="acc-list">
+                                        <li><a href="account-close.html"><i class="icon-cancel-circled "></i> Close account </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
+
+            <div class="col-sm-9 page-content">
+                <div class="inner-box">
+                    <div class="welcome-msg">
+                        <h3 class="page-sub-header2 clearfix no-padding">Hello {$user->name} </h3>
+                        <div id="accordion" class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <a href="#collapseB1" data-toggle="collapse"> My details </a> </h4>
+                                </div>
+                                <div class="panel-collapse collapse in" id="collapseB1">
+                                    <div class="panel-body">
+                                        <form class="form-horizontal" role="form" method="post" action="">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Name</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="name" class="form-control" placeholder="Full Name" value="{$user->name}">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Email</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" name="email" class="form-control" placeholder="jhon.deo@example.com" value="{$user->email}">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Gender</label>
+                                                <div class="col-sm-9">
+                                                    <div class="radio">
+                                                        <label for="Gender-0">
+                                                            <input name="gender" id="Gender-0" value="male" {if($user->gender == "male")}checked{/if} type="radio">
+                                                            Male </label>
+                                                        <label for="Gender-1">
+                                                            <input name="gender" id="Gender-1" value="female" {if($user->gender == "female")}checked{/if} type="radio">
+                                                            Female </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Phone" class="col-sm-3 control-label">Phone</label>
+                                                <div class="col-sm-9">
+                                                    <input type="tel" name="phone" class="form-control" id="Phone" placeholder="880 124 9820" value="{$user->phone}" required="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-3 col-sm-9">
+                                                    <button type="submit" class="btn btn-primary">Update</button>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="action" value="saveUser">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <a href="#collapseB2" data-toggle="collapse"> Change Password </a> </h4>
+                                </div>
+                                <div class="panel-collapse collapse" id="collapseB2">
+                                    <div class="panel-body">
+                                        <form class="form-horizontal" role="form" method="post" action="">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Old Password</label>
+                                                <div class="col-sm-9">
+                                                    <input type="password" name="opassword" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">New Password</label>
+                                                <div class="col-sm-9">
+                                                    <input type="password" name="npassword" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-3 col-sm-9">
+                                                    <button type="submit" class="btn btn-primary">Update</button>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="action" value="changePassword">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <a href="#collapseB3" data-toggle="collapse"> Preferences </a> </h4>
+                                </div>
+                                <div class="panel-collapse collapse" id="collapseB3">
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        I want to receive newsletter. </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        I want to receive advice on buying and selling. </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

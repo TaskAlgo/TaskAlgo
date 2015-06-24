@@ -10,6 +10,43 @@ use Framework\Registry as Registry;
 use Framework\RequestMethods as RequestMethods;
 
 class Users extends Controller {
+    
+    /**
+     * @before _secure
+     */
+    public function index() {
+        $this->seo(array(
+            "title" => "Account",
+            "keywords" => "Account",
+            "description" => "Account",
+            "view" => $this->getLayoutView()
+        ));
+        $view = $this->getActionView();
+        
+        if(RequestMethods::post("action") == "saveUser"){
+            $user = User::first(array("id = ?" => $this->user->id));
+            $user->name = RequestMethods::post("name");
+            $user->email = RequestMethods::post("email");
+            $user->gender = RequestMethods::post("gender");
+            $user->phone = RequestMethods::post("phone");
+            
+            $user->save();
+            $view->set("user", $user);
+            $view->set("success", "Account Updated Successfully");
+        }
+        
+        if(RequestMethods::post("action") == "changePassword"){
+            $user = User::first(array("id = ?" => $this->user->id));
+            $password = RequestMethods::post("opassword");
+            if($user->password == sha1($password)){
+                $user->password = sha1(RequestMethods::post("npassword"));
+                $user->save();
+                $view->set("success", "Password Changed Successfulyy");
+            } else {
+                $view->set("success", "Old Password incorrect, Try again");
+            }
+        }
+    }
 
     public function login($ep = NULL, $password = NULL) {
         if (isset($ep)) {
@@ -35,11 +72,17 @@ class Users extends Controller {
         }
     }
     
+    /**
+     * Logs Out the User
+     */
     public function logout() {
         $this->setUser(false);
         self::redirect("/home");
     }
     
+    /**
+     * Disabled HTML View
+     */
     public function noview() {
         $this->willRenderLayoutView = false;
         $this->willRenderActionView = false;

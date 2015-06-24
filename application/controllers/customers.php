@@ -42,7 +42,7 @@ class Customers extends Users {
             $user->save();
             $this->user = $user;
             
-            self::redirect("/customer");
+            self::redirect("/users");
         }
     }
 
