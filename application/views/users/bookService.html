@@ -6,7 +6,7 @@
                     <h2 class="title-2 uppercase"><strong> <i class="icon-docs"></i> Book a Service</strong> </h2>
                     <div class="row">
                         <div class="col-sm-12">
-                            <form class="form-horizontal">
+                            <form class="form-horizontal" method="post" action="">
                                 <fieldset>
 
                                     <div class="form-group">
@@ -111,6 +111,7 @@
                                         <div class="col-md-8"><button type="submit" id="button1id" class="btn btn-success btn-lg pull-right">Confirm Booking</button></div>
                                     </div>
                                 </fieldset>
+                                <input type="hidden" name="action" value="bookService">
                             </form>
                         </div>
                     </div>

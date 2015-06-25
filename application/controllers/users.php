@@ -91,6 +91,17 @@ class Users extends Controller {
         $view = $this->getActionView();
     }
     
+    public function close() {
+        $this->seo(array(
+            "title" => "TaskSphere",
+            "keywords" => "TaskSphere",
+            "description" => "TaskSphere",
+            "view" => $this->getLayoutView()
+        ));
+
+        $view = $this->getActionView();
+    }
+    
     public function bookService($city=NULL, $taskid=NULL) {
         $this->seo(array(
             "title" => "TaskSphere",

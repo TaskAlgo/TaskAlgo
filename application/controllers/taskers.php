@@ -21,7 +21,21 @@ class Taskers extends Users {
     }
     
     public function register() {
-        if(RequestMethods::post("newTasker")){
+        $this->seo(array(
+            "title" => "TaskSphere",
+            "keywords" => "TaskSphere",
+            "description" => "TaskSphere",
+            "view" => $this->getLayoutView()
+        ));
+        $view = $this->getActionView();
+        
+        $zones = Zone::all(array("live = ?" => true), array("DISTINCT city", "landmark", "id"));
+        $tasks = Task::all(array("live = ?" => true, "parent != ?" => 0), array("id", "title"));
+        
+        $view->set("tasks", $tasks);
+        $view->set("zones", $zones);
+        
+        if(RequestMethods::post("action") == "newTasker"){
             $user = new User(array(
                 "name" => RequestMethods::post("name"),
                 "email" => RequestMethods::post("email"),
@@ -31,11 +45,25 @@ class Taskers extends Users {
             ));
             $user->save();
             
-            self::redirect("/tasker/skills");
+            $skill = new Skill(array(
+                "user" => $user->id,
+                "zone" => RequestMethods::post("zone"),
+                "task" => RequestMethods::post("task")
+            ));
+            $skill->save();
+            
+            $this->user = $user;
+            self::redirect("/taskers/skills");
         }
     }
     
     public function skills() {
-        
+        $this->seo(array(
+            "title" => "TaskSphere",
+            "keywords" => "TaskSphere",
+            "description" => "TaskSphere",
+            "view" => $this->getLayoutView()
+        ));
+        $view = $this->getActionView();
     }
 }

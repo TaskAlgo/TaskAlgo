@@ -5,7 +5,7 @@
  *
  * @author Faizan Ayubi
  */
-class Service extends Shared\Model {
+class Skill extends Shared\Model {
     
     /**
      * @column
