@@ -32,6 +32,11 @@ $routes = array(
         "pattern" => "faq",
         "controller" => "home",
         "action" => "faq"
+    ),
+    array(
+        "pattern" => "bookService",
+        "controller" => "users",
+        "action" => "bookService"
     )
 );
 
