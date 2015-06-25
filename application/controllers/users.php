@@ -91,15 +91,27 @@ class Users extends Controller {
         $view = $this->getActionView();
     }
     
-    public function bookService() {
+    public function bookService($city=NULL, $taskid=NULL) {
         $this->seo(array(
             "title" => "TaskSphere",
             "keywords" => "TaskSphere",
             "description" => "TaskSphere",
             "view" => $this->getLayoutView()
         ));
-
         $view = $this->getActionView();
+        $zones = Zone::all(array("live = ?" => true), array("id", "landmark"));
+        $tasks = Task::all(array("live = ?" => true), array("id", "title"));
+        
+        if(RequestMethods::post("action") == "bookService"){
+            $city = RequestMethods::post("city");
+            $taskid = RequestMethods::post("task");
+            
+            $zones = Zone::all(array("city = ?" => $city), array("id", "landmark"));
+        }
+        
+        $view->set("taskid", $taskid);
+        $view->set("tasks", $tasks);
+        $view->set("zones", $zones);
     }
     
     public function bookConfirm() {
@@ -132,7 +144,7 @@ class Users extends Controller {
     public function sync() {
         $this->noview();
         $db = Registry::get("database");
-        //$db->sync(new Zone());
+        //$db->sync(new Task());
     }
 
     /**

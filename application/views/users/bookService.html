@@ -12,17 +12,23 @@
                                     <div class="form-group">
                                         <label class="col-md-3 control-label">Service</label>
                                         <div class="col-md-8">
-                                            <select name="category-group" id="category-group" class="form-control">
-                                                <option value="0" selected="selected"> Select a category... </option>
+                                            <select name="category-group" id="category-group" class="form-control" value="{$taskid}">
+                                                <option value="0" selected="selected"> Select a Category... </option>
+                                                {foreach $task in $tasks}
+                                                <option value="{$task->id}">{$task->title}</option>
+                                                {/foreach}
                                             </select>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group">
                                         <label class="col-md-3 control-label">Sub Service</label>
                                         <div class="col-md-8">
                                             <select name="category-group" id="category-group" class="form-control">
                                                 <option value="0" selected="selected"> Select a category... </option>
+                                                {foreach $task in $tasks}
+                                                <option value="{$task->id}">{$task->title}</option>
+                                                {/foreach}
                                             </select>
                                         </div>
                                     </div>
@@ -31,6 +37,25 @@
                                         <label class="col-md-3 control-label" for="Adtitle">Street Address</label>
                                         <div class="col-md-8">
                                             <input id="Adtitle" name="Adtitle" placeholder="include house no." class="form-control input-md" required="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Location</label>
+                                        <div class="col-md-8">
+                                            <select name="category-group" id="category-group" class="form-control">
+                                                <option value="0" selected="selected"> Select a Location... </option>
+                                                {foreach $zone in $zones}
+                                                <option value="{$zone->id}">{$zone->landmark}</option>
+                                                {/foreach}
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="City">City</label>
+                                        <div class="col-md-8">
+                                            <input id="City" name="city" class="form-control input-md" required="" type="text" disabled>
                                         </div>
                                     </div>
 

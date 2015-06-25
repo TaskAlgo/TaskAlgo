@@ -15,8 +15,13 @@ class Home extends Users {
             "description" => "TaskSphere",
             "view" => $this->getLayoutView()
         ));
-        
         $view = $this->getActionView();
+        
+        $zones = Zone::all(array("live = ?" => true), array("DISTINCT city"));
+        $tasks = Task::all(array("live = ?" => true, "parent != ?" => 0), array("id", "title"));
+        
+        $view->set("tasks", $tasks);
+        $view->set("zones", $zones);
     }
     
     public function about() {
