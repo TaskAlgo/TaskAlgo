@@ -5,8 +5,16 @@
  *
  * @author Faizan Ayubi
  */
+use Framework\Registry as Registry;
+use Framework\RequestMethods as RequestMethods;
+
 class Admin extends Users {
-    
+
+    /**
+     * @readwrite
+     */
+    protected $_manager;
+
     /**
      * Method which sets data stats for admin dashboard
      * 
@@ -18,21 +26,15 @@ class Admin extends Users {
         $now = strftime("%Y-%m-%d", strtotime('now'));
 
         $users = User::count();
-        $organizations = Organization::count();
-        $opportunities = Opportunity::count();
-        $applications = Application::count();
-        $leads = Lead::count();
-        $resumes = Resume::count();
+        $skills = Skill::count();
+        $jobs = Job::count();
 
         $view->set("now", $now);
         $view->set("users", $users);
-        $view->set("organizations", $organizations);
-        $view->set("opportunities", $opportunities);
-        $view->set("applications", $applications);
-        $view->set("leads", $leads);
-        $view->set("resumes", $resumes);
+        $view->set("skills", $skills);
+        $view->set("jobs", $jobs);
     }
-    
+
     /**
      * Searchs for data and returns result from db
      * @param type $model the data model
@@ -40,7 +42,7 @@ class Admin extends Users {
      * @param type $val the value of property
      * @before _secure, changeLayout
      */
-    public function search($model = NULL, $property = NULL, $val = 0, $page=1) {
+    public function search($model = NULL, $property = NULL, $val = 0, $page = 1) {
         $this->seo(array("title" => "Search", "keywords" => "admin", "description" => "admin", "view" => $this->getLayoutView()));
         $view = $this->getActionView();
         $model = RequestMethods::get("model", $model);
@@ -58,14 +60,15 @@ class Admin extends Users {
         $view->set("sign", $sign);
 
         if ($model) {
-            if($sign == "like"){
+            if ($sign == "like") {
                 $where = array("{$property} LIKE ?" => "%{$val}%");
             } else {
                 $where = array("{$property} = ?" => $val);
             }
-            
-            $objects = $model::all($where,array("*"),"created", "desc", 10, $page);
-            $count = $model::count($where);$i = 0;
+
+            $objects = $model::all($where, array("*"), "created", "desc", 10, $page);
+            $count = $model::count($where);
+            $i = 0;
             if ($objects) {
                 foreach ($objects as $object) {
                     $properties = $object->getJsonData();
@@ -158,25 +161,35 @@ class Admin extends Users {
     }
 
     /**
+     * Create any data provide with model and id
+     * 
      * @before _secure, changeLayout
+     * @param type $model the model object to be updated
+     * @param type $id the id of object
      */
-    public function stats() {
-        $this->seo(array("title" => "Stats", "keywords" => "admin", "description" => "admin", "view" => $this->getLayoutView()));
+    public function create($model = "user") {
+        $this->seo(array("title" => "Create", "keywords" => "admin", "description" => "admin", "view" => $this->getLayoutView()));
         $view = $this->getActionView();
-        if (RequestMethods::get("action") == "getStats") {
-            $startdate = RequestMethods::get("startdate");
-            $enddate = RequestMethods::get("enddate");
-            $property = ucfirst(RequestMethods::get("property"));
-            $property_id = ucfirst(RequestMethods::get("property_id"));
 
-            $diff = date_diff(date_create($startdate), date_create($enddate));
-            for ($i = 0; $i < $diff->format("%a"); $i++) {
-                $date = date('Y-m-d', strtotime($startdate . " +{$i} day"));
-                $count = Stat::count(array("created = ?" => $date, "property = ?" => $property, "property_id = ?" => $property_id));
-                $obj[] = array('y' => $date, 'a' => $count);
-            }
-            $view->set("data", \Framework\ArrayMethods::toObject($obj));
+        $object = new $model();
+        $vars = $object->columns;
+        $array = array();
+        foreach ($vars as $key => $value) {
+            array_push($array, $key);
+            $vars[$key] = htmlentities($object->$key);
         }
+        if (RequestMethods::post("action") == "update") {
+            foreach ($array as $field) {
+                $object->$field = RequestMethods::post($field, $vars[$field]);
+                $vars[$field] = htmlentities($object->$field);
+            }
+            $object->save();
+            $view->set("success", true);
+        }
+
+        $view->set("vars", $vars);
+        $view->set("array", $array);
+        $view->set("model", $model);
     }
 
     /**
@@ -199,14 +212,14 @@ class Admin extends Users {
             $view->set("data", \Framework\ArrayMethods::toObject($obj));
         }
     }
-    
+
     /**
      * @before _secure, changeLayout
      */
     public function support() {
         $this->seo(array("title" => "Support Tickets", "keywords" => "admin", "description" => "admin", "view" => $this->getLayoutView()));
         $view = $this->getActionView();
-        
+
         if (RequestMethods::post('action') == 'support') {
             $email = [RequestMethods::post('email')];
             $this->notify(array(
@@ -216,7 +229,7 @@ class Admin extends Users {
                 "message" => RequestMethods::post("body")
             ));
         }
-        
+
         $inbox = Conversation::all(array("property = ?" => "email"), array("created", "property_id", "message_id"), "id", "desc");
         $allinbox = [];
         foreach ($inbox as $message) {
@@ -229,12 +242,35 @@ class Admin extends Users {
                 "received" => \Framework\StringMethods::datetime_to_text($message->created)
             ];
         }
-        
+
         $view->set("allinbox", \Framework\ArrayMethods::toObject($allinbox));
     }
-    
+
     public function changeLayout() {
-        $this->defaultLayout = "layouts/admin";
+        $this->defaultLayout = "layouts/manager";
         $this->setLayout();
+
+        $session = Registry::get("session");
+        $manager = $session->get("manager");
+
+        $this->_manager = $manager;
+
+        $this->getActionView()->set("manager", $manager);
+        $this->getLayoutView()->set("manager", $manager);
     }
+
+    /**
+     * @protected
+     */
+    public function _secure() {
+        $user = $this->getUser();
+        $session = Registry::get("session");
+        $manager = $session->get("manager");
+
+        if (!$user || !$manager) {
+            header("Location: /");
+            exit();
+        }
+    }
+
 }

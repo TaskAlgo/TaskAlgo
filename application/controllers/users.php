@@ -73,6 +73,11 @@ class Users extends Controller {
 
             if (isset($user)) {
                 $this->user = $user;
+                $manager = Manager::all(array("user = ?" => $user->id));
+                if($manager){
+                    $session = Registry::get("session");
+                    $session->set("manager", $manager);
+                }
                 self::redirect("/users");
             } else {
                 $view->set("success", "Incorrect email/phone or password");
@@ -111,13 +116,29 @@ class Users extends Controller {
         ));
         $view = $this->getActionView();
         $zones = Zone::all(array("live = ?" => true), array("id", "landmark"));
-        $tasks = Task::all(array("live = ?" => true), array("id", "title"));
+        $tasks = Task::all(array("live = ?" => true), array("id", "title", "parent"));
         
         if(RequestMethods::post("action") == "bookService"){
             $city = RequestMethods::post("city");
             $taskid = RequestMethods::post("task");
             
-            $zones = Zone::all(array("city = ?" => $city), array("id", "landmark"));
+            $location = new Location(array(
+                "street" => RequestMethods::post("street"),
+                "zone" => RequestMethods::post("zone")
+            ));
+            $location->save();
+            
+            $job = new Job(array(
+                "user" => $this->user->id,
+                "task" => RequestMethods::post("task"),
+                "location" => $location->id,
+                "comment" => RequestMethods::post("comment"),
+                "cost" => "200",
+                "scheduled" => "2015-07-05",
+                "status" => "NOT_ASSIGNED"
+            ));
+            $job->save();
+            self::redirect("/users/bookConfirm");
         }
         
         $view->set("taskid", $taskid);
