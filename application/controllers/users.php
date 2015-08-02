@@ -247,58 +247,25 @@ class Users extends Controller {
         if(RequestMethods::post("action") == "bookService"){
 
             $city = RequestMethods::post("city");
-
             $taskid = RequestMethods::post("task");
-            $email = RequestMethods::post("email");
-            $mobile = RequestMethods::post("mobile");
-             if($this->validate_email($email) && $this->Validate_mobile($mobile))
-             {
             $location = new Location(array(
-
                 "street" => RequestMethods::post("street"),
-
                 "zone" => RequestMethods::post("zone")
-
             ));
-
             $location->save();
 
-            
-
             $job = new Job(array(
-
                 "user" => $this->user->id,
-
                 "task" => RequestMethods::post("task"),
-
                 "location" => $location->id,
-
                 "comment" => RequestMethods::post("comment"),
-
                 "cost" => "200",
-
                 "scheduled" => "2015-07-05",
-
                 "status" => "NOT_ASSIGNED"
-
             ));
-
             $job->save();
-
             self::redirect("/users/bookConfirm");
-        }
-        if(!$this->validate_email($email))
-             {
-                $view->set("emailw", "Inavlid Email Address");
-             }
-             if(!$this->Validate_mobile($mobile))
-             {
-                $view->set("mobilew", "Invalid mobile Number");
-             }
-
-        }
-
-        
+        }      
 
         $view->set("taskid", $taskid);
 
