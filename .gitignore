@@ -45,3 +45,4 @@ Temporary Items
 /logs/
 /sftp-config.json
 application/configuration/database.ini
+*.ini

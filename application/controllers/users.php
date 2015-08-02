@@ -439,7 +439,7 @@ class Users extends Controller {
         {
                 if((strlen($mobile)==10 && preg_match("/^[0-9]{10}$/", $mobile)))
                 {
-                    return false;
+                    return true;
                 }
                 else{return false;}
         }
