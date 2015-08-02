@@ -1,57 +1,57 @@
-<div class="main-container">
-<div class="container">
-    <div class="row">
-        {if(isset($success))}
-        <div class="col-md-12 page-content">
-            <div class="inner-box category-content">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="alert alert-success pgray  alert-lg" role="alert">
-                            <p>{$success}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {/if}
-            
-        <div class="col-sm-5 login-box">
-            <div class="panel panel-default">
-                <div class="panel-intro text-center">
-                    <h2 class="logo-title">
-
-                        <span class="logo-icon"><i class="icon icon-flash ln-shadow-logo shape-0"></i> </span>TASK<span>SPHERE </span> </h2>
-                </div>
-                <div class="panel-body">
-                    <form role="form" method="post" action="">
-                        <div class="form-group">
-                            <label for="sender-email" class="control-label">Email or Phone</label>
-                            <div class="input-icon"> <i class="icon-user fa"></i>
-                                <input name="ep" id="sender-email" type="text" placeholder="Email or phone number" class="form-control email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="user-pass" class="control-label">Password:</label>
-                            <div class="input-icon"> <i class="icon-lock fa"></i>
-                                <input name="password" type="password" class="form-control" placeholder="Password" id="user-pass">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                            <input type="hidden" name="action" value="login">
-                        </div>
-                    </form>
-                </div>
-                <div class="panel-footer">
-                    <p class="text-center pull-right"> <a href="/users/forgotpassword"> Lost your password? </a> </p>
-                    <div style=" clear:both"></div>
-                </div>
-            </div>
-            <div class="login-box-btm text-center">
-                <p> Dont have an account? <br>
-                    <a href="/customers/register"><strong>Sign Up !</strong> </a> </p>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="main-container">
+<div class="container">
+    <div class="row">
+        {if(isset($success))}
+        <div class="col-md-12 page-content">
+            <div class="inner-box category-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-success pgray  alert-lg" role="alert">
+                            <p>{$success}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/if}
+            
+        <div class="col-sm-5 login-box">
+            <div class="panel panel-default">
+                <div class="panel-intro text-center">
+                    <h2 class="logo-title">
+
+                        <span class="logo-icon"><i class="icon icon-flash ln-shadow-logo shape-0"></i> </span>TASK<span>SPHERE </span> </h2>
+                </div>
+                <div class="panel-body">
+                    <form role="form" method="post" action="">
+                        <div class="form-group">
+                            <label for="sender-email" class="control-label">Email or Phone</label>
+                            <div class="input-icon"> <i class="icon-user fa"></i>
+                                <input name="ep" id="sender-email" type="text" placeholder="Email or phone number" class="form-control email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-pass" class="control-label">Password:</label>
+                            <div class="input-icon"> <i class="icon-lock fa"></i>
+                                <input name="password" type="password" class="form-control" placeholder="Password" id="user-pass">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            <input type="hidden" name="action" value="login">
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    <p class="text-center pull-right"> <a href="/users/forgotpassword"> Lost your password? </a> </p>
+                    <div style=" clear:both"></div>
+                </div>
+            </div>
+            <div class="login-box-btm text-center">
+                <p> Dont have an account? <br>
+                    <a href="/customers/register"><strong>Sign Up !</strong> </a> </p>
+            </div>
+        </div>
+    </div>
+</div>
 </div>

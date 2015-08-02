@@ -1,143 +1,143 @@
-<div class="main-container">
-    <div class="container">
-        <div class="row">
-            {if(isset($success))}
-            <div class="col-md-12 page-content">
-                <div class="inner-box category-content">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="alert alert-success pgray  alert-lg" role="alert">
-                                <p>{$success}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/if}
-            
-            <div class="col-md-8 page-content">
-                <div class="inner-box category-content">
-                    <form class="form-horizontal" method="post" action="">
-                    <h2 class="title-2"> <i class="icon-user-add"></i> Basic Details </h2>
-                    <div class="row">
-                        <div class="col-sm-12">
-                                <fieldset>
-                                    <div class="form-group required">
-                                        <label class="col-md-4 control-label">Full Name <sup>*</sup></label>
-                                        <div class="col-md-6">
-                                            <input name="name" placeholder="Full Name" class="form-control input-md" required="" type="text">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group required">
-                                        <label class="col-md-4 control-label">Phone Number <sup>*</sup></label>
-                                        <div class="col-md-6">
-                                            <input name="phone" placeholder="Phone Number" class="form-control input-md" type="text" required="">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label">Gender</label>
-                                        <div class="col-md-6">
-                                            <div class="radio">
-                                                <label for="Gender-0">
-                                                    <input name="gender" id="Gender-0" value="male" checked="checked" type="radio">
-                                                    Male </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label for="Gender-1">
-                                                    <input name="gender" id="Gender-1" value="female" type="radio">
-                                                    Female </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group required">
-                                        <label for="inputEmail3" class="col-md-4 control-label">Email <sup>*</sup></label>
-                                        <div class="col-md-6">
-                                            <input name="email" type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group required">
-                                        <label for="inputPassword3" class="col-md-4 control-label">Password </label>
-                                        <div class="col-md-6">
-                                            <input name="password" type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                                            <p class="help-block">At least 5 characters  </p>
-                                        </div>
-                                    </div>
-
-                                </fieldset>
-                        </div>
-                    </div>
-                    
-                    <h2 class="title-2"> <i class="icon-briefcase"></i> Add your skills </h2>
-                    <div class="row">
-                        <div class="col-sm-12">
-                                <fieldset>
-                                    
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Skill</label>
-                                        <div class="col-md-8">
-                                            <select name="task" class="form-control">
-                                                <option value="0" selected="selected"> Select a Category... </option>
-                                                {foreach $task in $tasks}
-                                                <option value="{$task->id}">{$task->title}</option>
-                                                {/foreach}
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Location</label>
-                                        <div class="col-md-8">
-                                            <select name="zone" class="form-control">
-                                                <option value="0" selected="selected"> Select a Location... </option>
-                                                {foreach $zone in $zones}
-                                                <option value="{$zone->id}">{$zone->landmark}</option>
-                                                {/foreach}
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label"></label>
-                                        <div class="col-md-8">
-                                            <div class="termbox mb10">
-                                                By Submitting you have read and agree to the <a href="/terms">Terms & Conditions</a>
-                                            </div>
-                                            <div style="clear:both"></div>
-                                            <input type="hidden" name="action" value="addCustomer">
-                                            <button type="submit" class="btn btn-primary">Register</button>
-                                        </div>
-                                    </div>
-                                    
-                                </fieldset>
-                        </div>
-                    </div>
-                    <input type="hidden" name="action" value="newTasker">
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-4 reg-sidebar">
-                <div class="reg-sidebar-inner text-center">
-                    <div class="promo-text-box"> <i class=" icon-picture fa fa-4x icon-color-1"></i>
-                        <h3><strong>Sign Up</strong></h3>
-                        <p>Sign up for free and add your skills</p>
-                    </div>
-                    <div class="promo-text-box"> <i class=" icon-users fa fa-4x icon-color-2"></i>
-                        <h3><strong>Get Trained and verified</strong></h3>
-                        <p>You will get 15 days training before filed work and has to pass the accessibility exam.</p>
-                    </div>
-                    <div class="promo-text-box"> <i class="  icon-building-filled fa fa-4x icon-color-3"></i>
-                        <h3><strong>Complete the Job</strong></h3>
-                        <p>You will be assigned jobs on the basis of your skills, once accepted you have to complete the task</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-
+<div class="main-container">
+    <div class="container">
+        <div class="row">
+            {if(isset($success))}
+            <div class="col-md-12 page-content">
+                <div class="inner-box category-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="alert alert-success pgray  alert-lg" role="alert">
+                                <p>{$success}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/if}
+            
+            <div class="col-md-8 page-content">
+                <div class="inner-box category-content">
+                    <form class="form-horizontal" method="post" action="">
+                    <h2 class="title-2"> <i class="icon-user-add"></i> Basic Details </h2>
+                    <div class="row">
+                        <div class="col-sm-12">
+                                <fieldset>
+                                    <div class="form-group required">
+                                        <label class="col-md-4 control-label">Full Name <sup>*</sup></label>
+                                        <div class="col-md-6">
+                                            <input name="name" placeholder="Full Name" class="form-control input-md" required="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group required">
+                                        <label class="col-md-4 control-label">Phone Number <sup>*</sup></label>
+                                        <div class="col-md-6">
+                                            <input name="phone" placeholder="Phone Number" class="form-control input-md" type="text" required="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Gender</label>
+                                        <div class="col-md-6">
+                                            <div class="radio">
+                                                <label for="Gender-0">
+                                                    <input name="gender" id="Gender-0" value="male" checked="checked" type="radio">
+                                                    Male </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label for="Gender-1">
+                                                    <input name="gender" id="Gender-1" value="female" type="radio">
+                                                    Female </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group required">
+                                        <label for="inputEmail3" class="col-md-4 control-label">Email <sup>*</sup></label>
+                                        <div class="col-md-6">
+                                            <input name="email" type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group required">
+                                        <label for="inputPassword3" class="col-md-4 control-label">Password </label>
+                                        <div class="col-md-6">
+                                            <input name="password" type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                            <p class="help-block">At least 5 characters  </p>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                        </div>
+                    </div>
+                    
+                    <h2 class="title-2"> <i class="icon-briefcase"></i> Add your skills </h2>
+                    <div class="row">
+                        <div class="col-sm-12">
+                                <fieldset>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Skill</label>
+                                        <div class="col-md-8">
+                                            <select name="task" class="form-control">
+                                                <option value="0" selected="selected"> Select a Category... </option>
+                                                {foreach $task in $tasks}
+                                                <option value="{$task->id}">{$task->title}</option>
+                                                {/foreach}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Location</label>
+                                        <div class="col-md-8">
+                                            <select name="zone" class="form-control">
+                                                <option value="0" selected="selected"> Select a Location... </option>
+                                                {foreach $zone in $zones}
+                                                <option value="{$zone->id}">{$zone->landmark}</option>
+                                                {/foreach}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label"></label>
+                                        <div class="col-md-8">
+                                            <div class="termbox mb10">
+                                                By Submitting you have read and agree to the <a href="/terms">Terms & Conditions</a>
+                                            </div>
+                                            <div style="clear:both"></div>
+                                            <input type="hidden" name="action" value="addCustomer">
+                                            <button type="submit" class="btn btn-primary">Register</button>
+                                        </div>
+                                    </div>
+                                    
+                                </fieldset>
+                        </div>
+                    </div>
+                    <input type="hidden" name="action" value="newTasker">
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 reg-sidebar">
+                <div class="reg-sidebar-inner text-center">
+                    <div class="promo-text-box"> <i class=" icon-picture fa fa-4x icon-color-1"></i>
+                        <h3><strong>Sign Up</strong></h3>
+                        <p>Sign up for free and add your skills</p>
+                    </div>
+                    <div class="promo-text-box"> <i class=" icon-users fa fa-4x icon-color-2"></i>
+                        <h3><strong>Get Trained and verified</strong></h3>
+                        <p>You will get 15 days training before filed work and has to pass the accessibility exam.</p>
+                    </div>
+                    <div class="promo-text-box"> <i class="  icon-building-filled fa fa-4x icon-color-3"></i>
+                        <h3><strong>Complete the Job</strong></h3>
+                        <p>You will be assigned jobs on the basis of your skills, once accepted you have to complete the task</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </div>

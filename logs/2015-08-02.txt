@@ -1,0 +1,10 @@
+[2015-08-02 00:43:01]framework.configuration.initialize.before: ini
+[2015-08-02 00:43:01]framework.configuration.initialize.after: ini
+[2015-08-02 00:43:01]framework.database.initialize.before: 
+[2015-08-02 00:43:01]framework.database.initialize.after: mysql
+[2015-08-02 00:43:01]framework.cache.initialize.before: 
+[2015-08-02 00:43:01]framework.cache.initialize.after: memcached
+[2015-08-02 00:43:01]framework.session.initialize.before: 
+[2015-08-02 00:43:01]framework.session.initialize.after: server
+[2015-08-02 00:43:02]framework.router.dispatch.before: customer/register
+Average: -0.095694666666667, Longest: 0.039557, Shortest: -0.954053, Total: -0.833084

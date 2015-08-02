@@ -1,0 +1,910 @@
+[2015-07-23 03:47:31]framework.configuration.initialize.before: ini
+[2015-07-23 03:47:31]framework.configuration.initialize.after: ini
+[2015-07-23 03:47:31]framework.database.initialize.before: 
+[2015-07-23 03:47:32]framework.database.initialize.after: mysql
+[2015-07-23 03:47:32]framework.cache.initialize.before: 
+[2015-07-23 03:47:32]framework.cache.initialize.after: memcached
+[2015-07-23 03:47:32]framework.session.initialize.before: 
+[2015-07-23 03:47:32]framework.session.initialize.after: server
+[2015-07-23 03:47:32]framework.router.dispatch.before: taskers/register
+[2015-07-23 03:47:32]framework.controller.construct.before: Taskers
+[2015-07-23 03:47:32]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 03:47:32]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 03:47:32]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/taskers/register.html
+[2015-07-23 03:47:32]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/taskers/register.html
+[2015-07-23 03:47:32]framework.controller.construct.after: Taskers
+[2015-07-23 03:47:32]framework.router.dispatch.after: taskers/register, taskers, register
+Average: -0.0254480625, Longest: 0.128109, Shortest: -0.98411, Total: -0.407065
+[2015-07-23 05:26:39]framework.configuration.initialize.before: ini
+[2015-07-23 05:26:39]framework.configuration.initialize.after: ini
+[2015-07-23 05:26:39]framework.database.initialize.before: 
+[2015-07-23 05:26:39]framework.database.initialize.after: mysql
+[2015-07-23 05:26:39]framework.cache.initialize.before: 
+[2015-07-23 05:26:39]framework.cache.initialize.after: memcached
+[2015-07-23 05:26:39]framework.session.initialize.before: 
+[2015-07-23 05:26:39]framework.session.initialize.after: server
+[2015-07-23 05:26:39]framework.router.dispatch.before: bookService
+[2015-07-23 05:26:39]framework.router.dispatch.after: bookService, users, bookService
+[2015-07-23 05:26:39]framework.controller.construct.before: Users
+[2015-07-23 05:26:39]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 05:26:39]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 05:26:39]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 05:26:39]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 05:26:39]framework.controller.construct.after: Users
+Average: 0.0188285, Longest: 0.101751, Shortest: 7.8000000000022E-5, Total: 0.361215
+[2015-07-23 05:31:30]framework.configuration.initialize.before: ini
+[2015-07-23 05:31:30]framework.configuration.initialize.after: ini
+[2015-07-23 05:31:30]framework.database.initialize.before: 
+[2015-07-23 05:31:30]framework.database.initialize.after: mysql
+[2015-07-23 05:31:30]framework.cache.initialize.before: 
+[2015-07-23 05:31:30]framework.cache.initialize.after: memcached
+[2015-07-23 05:31:30]framework.session.initialize.before: 
+[2015-07-23 05:31:30]framework.session.initialize.after: server
+[2015-07-23 05:31:30]framework.router.dispatch.before: home/index
+[2015-07-23 05:31:30]framework.controller.construct.before: Home
+[2015-07-23 05:31:30]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 05:31:30]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 05:31:30]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 05:31:30]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 05:31:30]framework.controller.construct.after: Home
+[2015-07-23 05:31:30]framework.router.dispatch.after: home/index, home, index
+Average: -0.0388933125, Longest: 0.068955, Shortest: -0.923514, Total: -0.62219
+[2015-07-23 10:21:40]framework.configuration.initialize.before: ini
+[2015-07-23 10:21:40]framework.configuration.initialize.after: ini
+[2015-07-23 10:21:40]framework.database.initialize.before: 
+[2015-07-23 10:21:40]framework.database.initialize.after: mysql
+[2015-07-23 10:21:40]framework.cache.initialize.before: 
+[2015-07-23 10:21:40]framework.cache.initialize.after: memcached
+[2015-07-23 10:21:40]framework.session.initialize.before: 
+[2015-07-23 10:21:40]framework.session.initialize.after: server
+[2015-07-23 10:21:40]framework.router.dispatch.before: home/index
+[2015-07-23 10:21:40]framework.controller.construct.before: Home
+[2015-07-23 10:21:40]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:21:40]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:21:40]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:21:40]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:21:40]framework.controller.construct.after: Home
+[2015-07-23 10:21:40]framework.router.dispatch.after: home/index, home, index
+Average: 0.0211660625, Longest: 0.08762, Shortest: 7.4999999999992E-5, Total: 0.338772
+[2015-07-23 10:21:44]framework.configuration.initialize.before: ini
+[2015-07-23 10:21:44]framework.configuration.initialize.after: ini
+[2015-07-23 10:21:44]framework.database.initialize.before: 
+[2015-07-23 10:21:44]framework.database.initialize.after: mysql
+[2015-07-23 10:21:44]framework.cache.initialize.before: 
+[2015-07-23 10:21:44]framework.cache.initialize.after: memcached
+[2015-07-23 10:21:44]framework.session.initialize.before: 
+[2015-07-23 10:21:44]framework.session.initialize.after: server
+[2015-07-23 10:21:44]framework.router.dispatch.before: beta
+Average: 0.00087611111111111, Longest: 0.002964, Shortest: 0.000138, Total: 0.072963
+[2015-07-23 10:21:45]framework.configuration.initialize.before: ini
+[2015-07-23 10:21:45]framework.configuration.initialize.after: ini
+[2015-07-23 10:21:45]framework.database.initialize.before: 
+[2015-07-23 10:21:45]framework.database.initialize.after: mysql
+[2015-07-23 10:21:45]framework.cache.initialize.before: 
+[2015-07-23 10:21:45]framework.cache.initialize.after: memcached
+[2015-07-23 10:21:45]framework.session.initialize.before: 
+[2015-07-23 10:21:45]framework.session.initialize.after: server
+[2015-07-23 10:21:45]framework.router.dispatch.before: favicon
+Average: 0.00083144444444445, Longest: 0.002466, Shortest: 0.000141, Total: 0.011145
+[2015-07-23 10:21:47]framework.configuration.initialize.before: ini
+[2015-07-23 10:21:47]framework.configuration.initialize.after: ini
+[2015-07-23 10:21:47]framework.database.initialize.before: 
+[2015-07-23 10:21:47]framework.database.initialize.after: mysql
+[2015-07-23 10:21:47]framework.cache.initialize.before: 
+[2015-07-23 10:21:47]framework.cache.initialize.after: memcached
+[2015-07-23 10:21:47]framework.session.initialize.before: 
+[2015-07-23 10:21:47]framework.session.initialize.after: server
+[2015-07-23 10:21:47]framework.router.dispatch.before: home/index
+[2015-07-23 10:21:47]framework.controller.construct.before: Home
+[2015-07-23 10:21:47]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:21:47]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:21:47]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:21:47]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:21:47]framework.controller.construct.after: Home
+[2015-07-23 10:21:47]framework.router.dispatch.after: home/index, home, index
+Average: 0.00150725, Longest: 0.014162, Shortest: 7.1000000000043E-5, Total: 0.024177
+[2015-07-23 10:23:32]framework.configuration.initialize.before: ini
+[2015-07-23 10:23:32]framework.configuration.initialize.after: ini
+[2015-07-23 10:23:32]framework.database.initialize.before: 
+[2015-07-23 10:23:32]framework.database.initialize.after: mysql
+[2015-07-23 10:23:32]framework.cache.initialize.before: 
+[2015-07-23 10:23:32]framework.cache.initialize.after: memcached
+[2015-07-23 10:23:32]framework.session.initialize.before: 
+[2015-07-23 10:23:32]framework.session.initialize.after: server
+[2015-07-23 10:23:32]framework.router.dispatch.before: taskers/register
+[2015-07-23 10:23:32]framework.controller.construct.before: Taskers
+[2015-07-23 10:23:32]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:23:32]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:23:32]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/taskers/register.html
+[2015-07-23 10:23:32]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/taskers/register.html
+[2015-07-23 10:23:32]framework.controller.construct.after: Taskers
+[2015-07-23 10:23:32]framework.router.dispatch.after: taskers/register, taskers, register
+Average: 0.0044583125, Longest: 0.023985, Shortest: 7.0999999999932E-5, Total: 0.071402
+[2015-07-23 10:23:38]framework.configuration.initialize.before: ini
+[2015-07-23 10:23:38]framework.configuration.initialize.after: ini
+[2015-07-23 10:23:38]framework.database.initialize.before: 
+[2015-07-23 10:23:38]framework.database.initialize.after: mysql
+[2015-07-23 10:23:38]framework.cache.initialize.before: 
+[2015-07-23 10:23:38]framework.cache.initialize.after: memcached
+[2015-07-23 10:23:38]framework.session.initialize.before: 
+[2015-07-23 10:23:38]framework.session.initialize.after: server
+[2015-07-23 10:23:38]framework.router.dispatch.before: home/index
+[2015-07-23 10:23:38]framework.controller.construct.before: Home
+[2015-07-23 10:23:38]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:23:38]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:23:38]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:23:38]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:23:38]framework.controller.construct.after: Home
+[2015-07-23 10:23:38]framework.router.dispatch.after: home/index, home, index
+Average: 0.002184625, Longest: 0.025295, Shortest: 6.9999999999903E-5, Total: 0.035029
+[2015-07-23 10:23:41]framework.configuration.initialize.before: ini
+[2015-07-23 10:23:41]framework.configuration.initialize.after: ini
+[2015-07-23 10:23:41]framework.database.initialize.before: 
+[2015-07-23 10:23:41]framework.database.initialize.after: mysql
+[2015-07-23 10:23:41]framework.cache.initialize.before: 
+[2015-07-23 10:23:41]framework.cache.initialize.after: memcached
+[2015-07-23 10:23:41]framework.session.initialize.before: 
+[2015-07-23 10:23:41]framework.session.initialize.after: server
+[2015-07-23 10:23:41]framework.router.dispatch.before: customers/register
+[2015-07-23 10:23:47]framework.controller.construct.before: Customers
+[2015-07-23 10:23:47]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:23:47]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:23:47]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/customers/register.html
+[2015-07-23 10:23:47]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/customers/register.html
+[2015-07-23 10:23:47]framework.controller.construct.after: Customers
+[2015-07-23 10:23:47]framework.router.dispatch.after: customers/register, customers, register
+Average: 0.0104015, Longest: 0.122391, Shortest: 7.9000000000051E-5, Total: 0.166531
+[2015-07-23 10:24:04]framework.configuration.initialize.before: ini
+[2015-07-23 10:24:04]framework.configuration.initialize.after: ini
+[2015-07-23 10:24:04]framework.database.initialize.before: 
+[2015-07-23 10:24:04]framework.database.initialize.after: mysql
+[2015-07-23 10:24:04]framework.cache.initialize.before: 
+[2015-07-23 10:24:04]framework.cache.initialize.after: memcached
+[2015-07-23 10:24:04]framework.session.initialize.before: 
+[2015-07-23 10:24:04]framework.session.initialize.after: server
+[2015-07-23 10:24:04]framework.router.dispatch.before: login
+[2015-07-23 10:24:04]framework.router.dispatch.after: login, users, login
+[2015-07-23 10:24:04]framework.controller.construct.before: Users
+[2015-07-23 10:24:04]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:04]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:04]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/login.html
+[2015-07-23 10:24:04]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/login.html
+[2015-07-23 10:24:04]framework.controller.construct.after: Users
+Average: 0.0118746875, Longest: 0.091164, Shortest: -0.063067, Total: 0.194964
+[2015-07-23 10:24:07]framework.configuration.initialize.before: ini
+[2015-07-23 10:24:07]framework.configuration.initialize.after: ini
+[2015-07-23 10:24:07]framework.database.initialize.before: 
+[2015-07-23 10:24:07]framework.database.initialize.after: mysql
+[2015-07-23 10:24:07]framework.cache.initialize.before: 
+[2015-07-23 10:24:07]framework.cache.initialize.after: memcached
+[2015-07-23 10:24:07]framework.session.initialize.before: 
+[2015-07-23 10:24:07]framework.session.initialize.after: server
+[2015-07-23 10:24:07]framework.router.dispatch.before: login
+[2015-07-23 10:24:07]framework.router.dispatch.after: login, users, login
+[2015-07-23 10:24:07]framework.controller.construct.before: Users
+[2015-07-23 10:24:07]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:07]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:07]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/login.html
+[2015-07-23 10:24:07]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/login.html
+[2015-07-23 10:24:07]framework.controller.construct.after: Users
+Average: 0.007629125, Longest: 0.103727, Shortest: 7.5999999999965E-5, Total: 0.248881
+[2015-07-23 10:24:07]framework.configuration.initialize.before: ini
+[2015-07-23 10:24:07]framework.configuration.initialize.after: ini
+[2015-07-23 10:24:07]framework.database.initialize.before: 
+[2015-07-23 10:24:07]framework.database.initialize.after: mysql
+[2015-07-23 10:24:07]framework.cache.initialize.before: 
+[2015-07-23 10:24:07]framework.cache.initialize.after: memcached
+[2015-07-23 10:24:07]framework.session.initialize.before: 
+[2015-07-23 10:24:07]framework.session.initialize.after: server
+[2015-07-23 10:24:07]framework.router.dispatch.before: users
+[2015-07-23 10:24:07]framework.controller.construct.before: Users
+[2015-07-23 10:24:07]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:07]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:07]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/index.html
+[2015-07-23 10:24:07]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/index.html
+[2015-07-23 10:24:07]framework.controller.construct.after: Users
+[2015-07-23 10:24:08]framework.router.dispatch.after: users, users, index
+Average: -0.042156375, Longest: 0.022499, Shortest: -0.715635, Total: -0.67441
+[2015-07-23 10:24:10]framework.configuration.initialize.before: ini
+[2015-07-23 10:24:10]framework.configuration.initialize.after: ini
+[2015-07-23 10:24:10]framework.database.initialize.before: 
+[2015-07-23 10:24:10]framework.database.initialize.after: mysql
+[2015-07-23 10:24:10]framework.cache.initialize.before: 
+[2015-07-23 10:24:10]framework.cache.initialize.after: memcached
+[2015-07-23 10:24:10]framework.session.initialize.before: 
+[2015-07-23 10:24:10]framework.session.initialize.after: server
+[2015-07-23 10:24:10]framework.router.dispatch.before: users
+[2015-07-23 10:24:10]framework.controller.construct.before: Users
+[2015-07-23 10:24:10]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:10]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:10]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/index.html
+[2015-07-23 10:24:10]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/index.html
+[2015-07-23 10:24:10]framework.controller.construct.after: Users
+[2015-07-23 10:24:11]framework.router.dispatch.after: users, users, index
+Average: -0.0492100625, Longest: 0.016374, Shortest: -0.811502, Total: -0.787248
+[2015-07-23 10:24:13]framework.configuration.initialize.before: ini
+[2015-07-23 10:24:13]framework.configuration.initialize.after: ini
+[2015-07-23 10:24:13]framework.database.initialize.before: 
+[2015-07-23 10:24:13]framework.database.initialize.after: mysql
+[2015-07-23 10:24:13]framework.cache.initialize.before: 
+[2015-07-23 10:24:13]framework.cache.initialize.after: memcached
+[2015-07-23 10:24:13]framework.session.initialize.before: 
+[2015-07-23 10:24:13]framework.session.initialize.after: server
+[2015-07-23 10:24:13]framework.router.dispatch.before: bookService
+[2015-07-23 10:24:13]framework.router.dispatch.after: bookService, users, bookService
+[2015-07-23 10:24:13]framework.controller.construct.before: Users
+[2015-07-23 10:24:13]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:13]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:13]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 10:24:13]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 10:24:13]framework.controller.construct.after: Users
+Average: 0.001856125, Longest: 0.011657, Shortest: 8.3000000000055E-5, Total: 0.100309
+[2015-07-23 10:24:17]framework.configuration.initialize.before: ini
+[2015-07-23 10:24:17]framework.configuration.initialize.after: ini
+[2015-07-23 10:24:17]framework.database.initialize.before: 
+[2015-07-23 10:24:17]framework.database.initialize.after: mysql
+[2015-07-23 10:24:17]framework.cache.initialize.before: 
+[2015-07-23 10:24:17]framework.cache.initialize.after: memcached
+[2015-07-23 10:24:17]framework.session.initialize.before: 
+[2015-07-23 10:24:17]framework.session.initialize.after: server
+[2015-07-23 10:24:17]framework.router.dispatch.before: home/index
+[2015-07-23 10:24:17]framework.controller.construct.before: Home
+[2015-07-23 10:24:17]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:17]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:24:17]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:24:17]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:24:17]framework.controller.construct.after: Home
+[2015-07-23 10:24:17]framework.router.dispatch.after: home/index, home, index
+Average: 0.0028981875, Longest: 0.032648, Shortest: 7.0000000000001E-5, Total: 0.046444
+[2015-07-23 10:25:31]framework.configuration.initialize.before: ini
+[2015-07-23 10:25:31]framework.configuration.initialize.after: ini
+[2015-07-23 10:25:31]framework.database.initialize.before: 
+[2015-07-23 10:25:31]framework.database.initialize.after: mysql
+[2015-07-23 10:25:31]framework.cache.initialize.before: 
+[2015-07-23 10:25:31]framework.cache.initialize.after: memcached
+[2015-07-23 10:25:31]framework.session.initialize.before: 
+[2015-07-23 10:25:31]framework.session.initialize.after: server
+[2015-07-23 10:25:31]framework.router.dispatch.before: users/bookService
+[2015-07-23 10:25:31]framework.controller.construct.before: Users
+[2015-07-23 10:25:31]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:25:31]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:25:31]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 10:25:31]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 10:25:31]framework.controller.construct.after: Users
+[2015-07-23 10:25:31]framework.router.dispatch.after: users/bookService, users, bookService
+Average: 0.005583625, Longest: 0.060608, Shortest: 7.3000000000004E-5, Total: 0.089429
+[2015-07-23 10:25:44]framework.configuration.initialize.before: ini
+[2015-07-23 10:25:44]framework.configuration.initialize.after: ini
+[2015-07-23 10:25:44]framework.database.initialize.before: 
+[2015-07-23 10:25:44]framework.database.initialize.after: mysql
+[2015-07-23 10:25:44]framework.cache.initialize.before: 
+[2015-07-23 10:25:44]framework.cache.initialize.after: memcached
+[2015-07-23 10:25:44]framework.session.initialize.before: 
+[2015-07-23 10:25:44]framework.session.initialize.after: server
+[2015-07-23 10:25:44]framework.router.dispatch.before: home/index
+[2015-07-23 10:25:44]framework.controller.construct.before: Home
+[2015-07-23 10:25:44]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:25:44]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:25:44]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:25:44]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:25:44]framework.controller.construct.after: Home
+[2015-07-23 10:25:44]framework.router.dispatch.after: home/index, home, index
+Average: 0.001985375, Longest: 0.021518, Shortest: 7.299999999999E-5, Total: 0.03186
+[2015-07-23 10:26:18]framework.configuration.initialize.before: ini
+[2015-07-23 10:26:18]framework.configuration.initialize.after: ini
+[2015-07-23 10:26:18]framework.database.initialize.before: 
+[2015-07-23 10:26:18]framework.database.initialize.after: mysql
+[2015-07-23 10:26:18]framework.cache.initialize.before: 
+[2015-07-23 10:26:18]framework.cache.initialize.after: memcached
+[2015-07-23 10:26:18]framework.session.initialize.before: 
+[2015-07-23 10:26:18]framework.session.initialize.after: server
+[2015-07-23 10:26:18]framework.router.dispatch.before: home/index
+[2015-07-23 10:26:18]framework.controller.construct.before: Home
+[2015-07-23 10:26:18]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:26:18]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:26:18]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:26:18]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:26:18]framework.controller.construct.after: Home
+[2015-07-23 10:26:18]framework.router.dispatch.after: home/index, home, index
+Average: 0.00647975, Longest: 0.092297, Shortest: 8.9999999999923E-5, Total: 0.103763
+[2015-07-23 10:29:57]framework.configuration.initialize.before: ini
+[2015-07-23 10:29:57]framework.configuration.initialize.after: ini
+[2015-07-23 10:29:57]framework.database.initialize.before: 
+[2015-07-23 10:29:57]framework.database.initialize.after: mysql
+[2015-07-23 10:29:57]framework.cache.initialize.before: 
+[2015-07-23 10:29:57]framework.cache.initialize.after: memcached
+[2015-07-23 10:29:57]framework.session.initialize.before: 
+[2015-07-23 10:29:57]framework.session.initialize.after: server
+[2015-07-23 10:29:57]framework.router.dispatch.before: home/index
+[2015-07-23 10:29:57]framework.controller.construct.before: Home
+[2015-07-23 10:29:57]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:29:57]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:29:57]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:29:57]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:29:57]framework.controller.construct.after: Home
+[2015-07-23 10:29:58]framework.router.dispatch.after: home/index, home, index
+Average: -0.0156549375, Longest: 0.134922, Shortest: -0.574402, Total: -0.250399
+[2015-07-23 10:31:51]framework.configuration.initialize.before: ini
+[2015-07-23 10:31:51]framework.configuration.initialize.after: ini
+[2015-07-23 10:31:51]framework.database.initialize.before: 
+[2015-07-23 10:31:51]framework.database.initialize.after: mysql
+[2015-07-23 10:31:51]framework.cache.initialize.before: 
+[2015-07-23 10:31:51]framework.cache.initialize.after: memcached
+[2015-07-23 10:31:51]framework.session.initialize.before: 
+[2015-07-23 10:31:51]framework.session.initialize.after: server
+[2015-07-23 10:31:51]framework.router.dispatch.before: bookService
+[2015-07-23 10:31:51]framework.router.dispatch.after: bookService, users, bookService
+[2015-07-23 10:31:51]framework.controller.construct.before: Users
+[2015-07-23 10:31:51]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:31:51]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:31:51]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 10:31:51]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 10:31:51]framework.controller.construct.after: Users
+Average: 0.0065561875, Longest: 0.049086, Shortest: 7.0999999999932E-5, Total: 0.156161
+[2015-07-23 10:31:55]framework.configuration.initialize.before: ini
+[2015-07-23 10:31:55]framework.configuration.initialize.after: ini
+[2015-07-23 10:31:55]framework.database.initialize.before: 
+[2015-07-23 10:31:55]framework.database.initialize.after: mysql
+[2015-07-23 10:31:55]framework.cache.initialize.before: 
+[2015-07-23 10:31:55]framework.cache.initialize.after: memcached
+[2015-07-23 10:31:55]framework.session.initialize.before: 
+[2015-07-23 10:31:55]framework.session.initialize.after: server
+[2015-07-23 10:31:55]framework.router.dispatch.before: home/index
+[2015-07-23 10:31:55]framework.controller.construct.before: Home
+[2015-07-23 10:31:55]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:31:55]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:31:55]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:31:55]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:31:55]framework.controller.construct.after: Home
+[2015-07-23 10:31:55]framework.router.dispatch.after: home/index, home, index
+Average: 0.0036461875, Longest: 0.045556, Shortest: 8.699999999999E-5, Total: 0.058411
+[2015-07-23 10:32:20]framework.configuration.initialize.before: ini
+[2015-07-23 10:32:20]framework.configuration.initialize.after: ini
+[2015-07-23 10:32:20]framework.database.initialize.before: 
+[2015-07-23 10:32:20]framework.database.initialize.after: mysql
+[2015-07-23 10:32:20]framework.cache.initialize.before: 
+[2015-07-23 10:32:20]framework.cache.initialize.after: memcached
+[2015-07-23 10:32:20]framework.session.initialize.before: 
+[2015-07-23 10:32:20]framework.session.initialize.after: server
+[2015-07-23 10:32:22]framework.router.dispatch.before: about
+[2015-07-23 10:32:22]framework.router.dispatch.after: about, home, about
+[2015-07-23 10:32:22]framework.controller.construct.before: Home
+[2015-07-23 10:32:22]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:32:22]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:32:22]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/about.html
+[2015-07-23 10:32:22]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/about.html
+[2015-07-23 10:32:22]framework.controller.construct.after: Home
+Average: 0.0216968125, Longest: 0.336273, Shortest: 7.0999999999988E-5, Total: 0.383592
+[2015-07-23 10:32:26]framework.configuration.initialize.before: ini
+[2015-07-23 10:32:26]framework.configuration.initialize.after: ini
+[2015-07-23 10:32:26]framework.database.initialize.before: 
+[2015-07-23 10:32:26]framework.database.initialize.after: mysql
+[2015-07-23 10:32:26]framework.cache.initialize.before: 
+[2015-07-23 10:32:26]framework.cache.initialize.after: memcached
+[2015-07-23 10:32:26]framework.session.initialize.before: 
+[2015-07-23 10:32:26]framework.session.initialize.after: server
+[2015-07-23 10:32:26]framework.router.dispatch.before: images/bg2
+Average: 0.019116333333333, Longest: 0.163788, Shortest: 0.000152, Total: 0.37558
+[2015-07-23 10:32:26]framework.configuration.initialize.before: ini
+[2015-07-23 10:32:26]framework.configuration.initialize.after: ini
+[2015-07-23 10:32:26]framework.database.initialize.before: 
+[2015-07-23 10:32:26]framework.database.initialize.after: mysql
+[2015-07-23 10:32:26]framework.cache.initialize.before: 
+[2015-07-23 10:32:26]framework.cache.initialize.after: memcached
+[2015-07-23 10:32:26]framework.session.initialize.before: 
+[2015-07-23 10:32:26]framework.session.initialize.after: server
+[2015-07-23 10:32:26]framework.router.dispatch.before: public/images/crousel1
+Average: 0.035443222222222, Longest: 0.307638, Shortest: 0.00014799999999998, Total: 0.462954
+[2015-07-23 10:34:50]framework.configuration.initialize.before: ini
+[2015-07-23 10:34:50]framework.configuration.initialize.after: ini
+[2015-07-23 10:34:50]framework.database.initialize.before: 
+[2015-07-23 10:34:50]framework.database.initialize.after: mysql
+[2015-07-23 10:34:50]framework.cache.initialize.before: 
+[2015-07-23 10:34:50]framework.cache.initialize.after: memcached
+[2015-07-23 10:34:50]framework.session.initialize.before: 
+[2015-07-23 10:34:50]framework.session.initialize.after: server
+[2015-07-23 10:34:50]framework.router.dispatch.before: bookService
+[2015-07-23 10:34:50]framework.router.dispatch.after: bookService, users, bookService
+[2015-07-23 10:34:50]framework.controller.construct.before: Users
+[2015-07-23 10:34:50]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:34:50]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:34:50]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 10:34:50]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 10:34:50]framework.controller.construct.after: Users
+Average: 0.0023365625, Longest: 0.007484, Shortest: 7.4999999999992E-5, Total: 0.077185
+[2015-07-23 10:35:57]framework.configuration.initialize.before: ini
+[2015-07-23 10:35:57]framework.configuration.initialize.after: ini
+[2015-07-23 10:35:58]framework.database.initialize.before: 
+[2015-07-23 10:35:58]framework.database.initialize.after: mysql
+[2015-07-23 10:35:59]framework.cache.initialize.before: 
+[2015-07-23 10:35:59]framework.cache.initialize.after: memcached
+[2015-07-23 10:36:00]framework.session.initialize.before: 
+[2015-07-23 10:36:00]framework.session.initialize.after: server
+[2015-07-23 10:36:02]framework.router.dispatch.before: home/index
+[2015-07-23 10:36:02]framework.controller.construct.before: Home
+[2015-07-23 10:36:02]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:36:02]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:36:02]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:36:02]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:36:02]framework.controller.construct.after: Home
+[2015-07-23 10:36:02]framework.router.dispatch.after: home/index, home, index
+Average: -0.010064875, Longest: 0.351464, Shortest: -0.503314, Total: -0.160946
+[2015-07-23 10:36:52]framework.configuration.initialize.before: ini
+[2015-07-23 10:36:52]framework.configuration.initialize.after: ini
+[2015-07-23 10:36:52]framework.database.initialize.before: 
+[2015-07-23 10:36:52]framework.database.initialize.after: mysql
+[2015-07-23 10:36:52]framework.cache.initialize.before: 
+[2015-07-23 10:36:52]framework.cache.initialize.after: memcached
+[2015-07-23 10:36:52]framework.session.initialize.before: 
+[2015-07-23 10:36:52]framework.session.initialize.after: server
+[2015-07-23 10:36:52]framework.router.dispatch.before: about
+[2015-07-23 10:36:52]framework.router.dispatch.after: about, home, about
+[2015-07-23 10:36:52]framework.controller.construct.before: Home
+[2015-07-23 10:36:52]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:36:52]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:36:52]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/about.html
+[2015-07-23 10:36:52]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/about.html
+[2015-07-23 10:36:52]framework.controller.construct.after: Home
+Average: 0.000754125, Longest: 0.003499, Shortest: 7.2000000000016E-5, Total: 0.022892
+[2015-07-23 10:36:52]framework.configuration.initialize.before: ini
+[2015-07-23 10:36:52]framework.configuration.initialize.after: ini
+[2015-07-23 10:36:52]framework.database.initialize.before: 
+[2015-07-23 10:36:52]framework.database.initialize.after: mysql
+[2015-07-23 10:36:52]framework.cache.initialize.before: 
+[2015-07-23 10:36:52]framework.cache.initialize.after: memcached
+[2015-07-23 10:36:52]framework.session.initialize.before: 
+[2015-07-23 10:36:52]framework.session.initialize.after: server
+[2015-07-23 10:36:52]framework.router.dispatch.before: public/images/crousel1
+Average: 0.00086233333333334, Longest: 0.002818, Shortest: 0.00014000000000003, Total: 0.010963
+[2015-07-23 10:36:52]framework.configuration.initialize.before: ini
+[2015-07-23 10:36:52]framework.configuration.initialize.after: ini
+[2015-07-23 10:36:52]framework.database.initialize.before: 
+[2015-07-23 10:36:52]framework.database.initialize.after: mysql
+[2015-07-23 10:36:52]framework.cache.initialize.before: 
+[2015-07-23 10:36:52]framework.cache.initialize.after: memcached
+[2015-07-23 10:36:52]framework.session.initialize.before: 
+[2015-07-23 10:36:52]framework.session.initialize.after: server
+[2015-07-23 10:36:52]framework.router.dispatch.before: images/bg2
+Average: 0.0010088888888889, Longest: 0.002872, Shortest: 0.00014199999999998, Total: 0.010166
+[2015-07-23 10:37:24]framework.configuration.initialize.before: ini
+[2015-07-23 10:37:24]framework.configuration.initialize.after: ini
+[2015-07-23 10:37:24]framework.database.initialize.before: 
+[2015-07-23 10:37:24]framework.database.initialize.after: mysql
+[2015-07-23 10:37:24]framework.cache.initialize.before: 
+[2015-07-23 10:37:24]framework.cache.initialize.after: memcached
+[2015-07-23 10:37:24]framework.session.initialize.before: 
+[2015-07-23 10:37:24]framework.session.initialize.after: server
+[2015-07-23 10:37:24]framework.router.dispatch.before: home/index
+[2015-07-23 10:37:24]framework.controller.construct.before: Home
+[2015-07-23 10:37:24]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:37:24]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:37:24]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:37:24]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:37:24]framework.controller.construct.after: Home
+[2015-07-23 10:37:24]framework.router.dispatch.after: home/index, home, index
+Average: 0.0035626875, Longest: 0.030177, Shortest: 7.0999999999988E-5, Total: 0.057073
+[2015-07-23 10:38:03]framework.configuration.initialize.before: ini
+[2015-07-23 10:38:03]framework.configuration.initialize.after: ini
+[2015-07-23 10:38:03]framework.database.initialize.before: 
+[2015-07-23 10:38:03]framework.database.initialize.after: mysql
+[2015-07-23 10:38:03]framework.cache.initialize.before: 
+[2015-07-23 10:38:03]framework.cache.initialize.after: memcached
+[2015-07-23 10:38:03]framework.session.initialize.before: 
+[2015-07-23 10:38:03]framework.session.initialize.after: server
+[2015-07-23 10:38:03]framework.router.dispatch.before: home/index
+[2015-07-23 10:38:03]framework.controller.construct.before: Home
+[2015-07-23 10:38:03]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:38:03]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 10:38:03]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:38:03]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 10:38:03]framework.controller.construct.after: Home
+[2015-07-23 10:38:03]framework.router.dispatch.after: home/index, home, index
+Average: 0.0020990625, Longest: 0.023011, Shortest: 7.1000000000002E-5, Total: 0.033651
+[2015-07-23 11:18:29]framework.configuration.initialize.before: ini
+[2015-07-23 11:18:29]framework.configuration.initialize.after: ini
+[2015-07-23 11:18:29]framework.database.initialize.before: 
+[2015-07-23 11:18:29]framework.database.initialize.after: mysql
+[2015-07-23 11:18:29]framework.cache.initialize.before: 
+[2015-07-23 11:18:29]framework.cache.initialize.after: memcached
+[2015-07-23 11:18:29]framework.session.initialize.before: 
+[2015-07-23 11:18:29]framework.session.initialize.after: server
+[2015-07-23 11:18:29]framework.router.dispatch.before: contact
+[2015-07-23 11:18:29]framework.router.dispatch.after: contact, home, contact
+[2015-07-23 11:18:29]framework.controller.construct.before: Home
+[2015-07-23 11:18:29]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 11:18:29]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 11:18:29]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/contact.html
+[2015-07-23 11:18:29]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/contact.html
+[2015-07-23 11:18:29]framework.controller.construct.after: Home
+Average: -0.03463075, Longest: 0.09298, Shortest: -0.897441, Total: -0.5306
+[2015-07-23 19:12:15]framework.configuration.initialize.before: ini
+[2015-07-23 19:12:15]framework.configuration.initialize.after: ini
+[2015-07-23 19:12:15]framework.database.initialize.before: 
+[2015-07-23 19:12:15]framework.database.initialize.after: mysql
+[2015-07-23 19:12:15]framework.cache.initialize.before: 
+[2015-07-23 19:12:15]framework.cache.initialize.after: memcached
+[2015-07-23 19:12:15]framework.session.initialize.before: 
+[2015-07-23 19:12:15]framework.session.initialize.after: server
+[2015-07-23 19:12:15]framework.router.dispatch.before: about
+[2015-07-23 19:12:15]framework.router.dispatch.after: about, home, about
+[2015-07-23 19:12:15]framework.controller.construct.before: Home
+[2015-07-23 19:12:15]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 19:12:15]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 19:12:15]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/about.html
+[2015-07-23 19:12:15]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/about.html
+[2015-07-23 19:12:15]framework.controller.construct.after: Home
+Average: -0.0269344375, Longest: 0.113491, Shortest: -0.749179, Total: -0.404912
+[2015-07-23 22:24:51]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:51]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:51]framework.database.initialize.before: 
+[2015-07-23 22:24:51]framework.database.initialize.after: mysql
+[2015-07-23 22:24:51]framework.cache.initialize.before: 
+[2015-07-23 22:24:51]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:51]framework.session.initialize.before: 
+[2015-07-23 22:24:51]framework.session.initialize.after: server
+[2015-07-23 22:24:51]framework.router.dispatch.before: home/index
+[2015-07-23 22:24:51]framework.controller.construct.before: Home
+[2015-07-23 22:24:51]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:51]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:51]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 22:24:51]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 22:24:51]framework.controller.construct.after: Home
+[2015-07-23 22:24:51]framework.router.dispatch.after: home/index, home, index
+Average: 0.02386525, Longest: 0.105417, Shortest: 9.7999999999931E-5, Total: 0.381947
+[2015-07-23 22:24:52]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:52]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:52]framework.database.initialize.before: 
+[2015-07-23 22:24:52]framework.database.initialize.after: mysql
+[2015-07-23 22:24:52]framework.cache.initialize.before: 
+[2015-07-23 22:24:52]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:52]framework.session.initialize.before: 
+[2015-07-23 22:24:52]framework.session.initialize.after: server
+[2015-07-23 22:24:52]framework.router.dispatch.before: home/index
+[2015-07-23 22:24:52]framework.controller.construct.before: Home
+[2015-07-23 22:24:52]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:52]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:52]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 22:24:52]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 22:24:52]framework.controller.construct.after: Home
+[2015-07-23 22:24:52]framework.router.dispatch.after: home/index, home, index
+Average: 0.00153475, Longest: 0.013903, Shortest: 8.7999999999977E-5, Total: 0.024639
+[2015-07-23 22:24:53]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:53]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:53]framework.database.initialize.before: 
+[2015-07-23 22:24:53]framework.database.initialize.after: mysql
+[2015-07-23 22:24:53]framework.cache.initialize.before: 
+[2015-07-23 22:24:53]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:53]framework.session.initialize.before: 
+[2015-07-23 22:24:53]framework.session.initialize.after: server
+[2015-07-23 22:24:53]framework.router.dispatch.before: about
+[2015-07-23 22:24:53]framework.router.dispatch.after: about, home, about
+[2015-07-23 22:24:53]framework.controller.construct.before: Home
+[2015-07-23 22:24:53]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:53]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:53]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/about.html
+[2015-07-23 22:24:53]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/about.html
+[2015-07-23 22:24:53]framework.controller.construct.after: Home
+Average: 0.0006734375, Longest: 0.00239, Shortest: 7.4999999999992E-5, Total: 0.012943
+[2015-07-23 22:24:53]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:53]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:53]framework.database.initialize.before: 
+[2015-07-23 22:24:53]framework.database.initialize.after: mysql
+[2015-07-23 22:24:53]framework.cache.initialize.before: 
+[2015-07-23 22:24:53]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:53]framework.session.initialize.before: 
+[2015-07-23 22:24:53]framework.session.initialize.after: server
+[2015-07-23 22:24:53]framework.router.dispatch.before: contact
+[2015-07-23 22:24:53]framework.router.dispatch.after: contact, home, contact
+[2015-07-23 22:24:53]framework.controller.construct.before: Home
+[2015-07-23 22:24:53]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:53]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:53]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/contact.html
+[2015-07-23 22:24:53]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/contact.html
+[2015-07-23 22:24:53]framework.controller.construct.after: Home
+Average: 0.000795375, Longest: 0.0032720000000001, Shortest: 7.1999999999961E-5, Total: 0.016858
+[2015-07-23 22:24:53]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:53]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:53]framework.database.initialize.before: 
+[2015-07-23 22:24:53]framework.database.initialize.after: mysql
+[2015-07-23 22:24:53]framework.cache.initialize.before: 
+[2015-07-23 22:24:53]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:53]framework.session.initialize.before: 
+[2015-07-23 22:24:53]framework.session.initialize.after: server
+[2015-07-23 22:24:53]framework.router.dispatch.before: login
+[2015-07-23 22:24:53]framework.router.dispatch.after: login, users, login
+[2015-07-23 22:24:53]framework.controller.construct.before: Users
+[2015-07-23 22:24:53]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:53]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:53]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/login.html
+[2015-07-23 22:24:53]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/login.html
+[2015-07-23 22:24:53]framework.controller.construct.after: Users
+Average: 0.00396, Longest: 0.03409, Shortest: 7.2000000000072E-5, Total: 0.066023
+[2015-07-23 22:24:54]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:54]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:54]framework.database.initialize.before: 
+[2015-07-23 22:24:54]framework.database.initialize.after: mysql
+[2015-07-23 22:24:54]framework.cache.initialize.before: 
+[2015-07-23 22:24:54]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:54]framework.session.initialize.before: 
+[2015-07-23 22:24:54]framework.session.initialize.after: server
+[2015-07-23 22:24:54]framework.router.dispatch.before: customers/register
+[2015-07-23 22:24:54]framework.controller.construct.before: Customers
+[2015-07-23 22:24:54]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:54]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:54]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/customers/register.html
+[2015-07-23 22:24:54]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/customers/register.html
+[2015-07-23 22:24:54]framework.controller.construct.after: Customers
+[2015-07-23 22:24:54]framework.router.dispatch.after: customers/register, customers, register
+Average: 0.0050631875, Longest: 0.059762, Shortest: 7.299999999999E-5, Total: 0.081091
+[2015-07-23 22:24:55]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:55]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:55]framework.database.initialize.before: 
+[2015-07-23 22:24:55]framework.database.initialize.after: mysql
+[2015-07-23 22:24:55]framework.cache.initialize.before: 
+[2015-07-23 22:24:55]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:55]framework.session.initialize.before: 
+[2015-07-23 22:24:55]framework.session.initialize.after: server
+[2015-07-23 22:24:55]framework.router.dispatch.before: taskers/register
+[2015-07-23 22:24:55]framework.controller.construct.before: Taskers
+[2015-07-23 22:24:55]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:55]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:55]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/taskers/register.html
+[2015-07-23 22:24:55]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/taskers/register.html
+[2015-07-23 22:24:55]framework.controller.construct.after: Taskers
+[2015-07-23 22:24:55]framework.router.dispatch.after: taskers/register, taskers, register
+Average: 0.0028510625, Longest: 0.027778, Shortest: 7.2000000000003E-5, Total: 0.045698
+[2015-07-23 22:24:55]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:55]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:55]framework.database.initialize.before: 
+[2015-07-23 22:24:55]framework.database.initialize.after: mysql
+[2015-07-23 22:24:55]framework.cache.initialize.before: 
+[2015-07-23 22:24:55]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:55]framework.session.initialize.before: 
+[2015-07-23 22:24:55]framework.session.initialize.after: server
+[2015-07-23 22:24:55]framework.router.dispatch.before: bookService
+[2015-07-23 22:24:55]framework.router.dispatch.after: bookService, users, bookService
+[2015-07-23 22:24:55]framework.controller.construct.before: Users
+[2015-07-23 22:24:55]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:55]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:55]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 22:24:55]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 22:24:55]framework.controller.construct.after: Users
+Average: 0.0010713125, Longest: 0.0070180000000001, Shortest: 0.00014199999999998, Total: 0.034443
+[2015-07-23 22:24:56]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:56]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:56]framework.database.initialize.before: 
+[2015-07-23 22:24:56]framework.database.initialize.after: mysql
+[2015-07-23 22:24:56]framework.cache.initialize.before: 
+[2015-07-23 22:24:56]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:56]framework.session.initialize.before: 
+[2015-07-23 22:24:56]framework.session.initialize.after: server
+[2015-07-23 22:24:56]framework.router.dispatch.before: terms
+[2015-07-23 22:24:56]framework.router.dispatch.after: terms, home, terms
+[2015-07-23 22:24:56]framework.controller.construct.before: Home
+[2015-07-23 22:24:56]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:56]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:56]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/terms.html
+[2015-07-23 22:24:56]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/terms.html
+[2015-07-23 22:24:56]framework.controller.construct.after: Home
+Average: 0.0006473125, Longest: 0.002603, Shortest: 7.299999999999E-5, Total: 0.013206
+[2015-07-23 22:24:57]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:57]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:57]framework.database.initialize.before: 
+[2015-07-23 22:24:57]framework.database.initialize.after: mysql
+[2015-07-23 22:24:57]framework.cache.initialize.before: 
+[2015-07-23 22:24:57]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:57]framework.session.initialize.before: 
+[2015-07-23 22:24:57]framework.session.initialize.after: server
+[2015-07-23 22:24:57]framework.router.dispatch.before: privacy
+[2015-07-23 22:24:57]framework.router.dispatch.after: privacy, home, privacy
+[2015-07-23 22:24:57]framework.controller.construct.before: Home
+[2015-07-23 22:24:57]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:57]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:57]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/privacy.html
+[2015-07-23 22:24:57]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/privacy.html
+[2015-07-23 22:24:57]framework.controller.construct.after: Home
+Average: 0.0006413125, Longest: 0.002302, Shortest: 7.8999999999996E-5, Total: 0.016422
+[2015-07-23 22:24:57]framework.configuration.initialize.before: ini
+[2015-07-23 22:24:57]framework.configuration.initialize.after: ini
+[2015-07-23 22:24:57]framework.database.initialize.before: 
+[2015-07-23 22:24:57]framework.database.initialize.after: mysql
+[2015-07-23 22:24:57]framework.cache.initialize.before: 
+[2015-07-23 22:24:57]framework.cache.initialize.after: memcached
+[2015-07-23 22:24:57]framework.session.initialize.before: 
+[2015-07-23 22:24:57]framework.session.initialize.after: server
+[2015-07-23 22:24:57]framework.router.dispatch.before: faq
+[2015-07-23 22:24:57]framework.router.dispatch.after: faq, home, faq
+[2015-07-23 22:24:57]framework.controller.construct.before: Home
+[2015-07-23 22:24:57]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:57]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:24:57]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/faq.html
+[2015-07-23 22:24:57]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/faq.html
+[2015-07-23 22:24:57]framework.controller.construct.after: Home
+Average: 0.0006521875, Longest: 0.0024660000000001, Shortest: 7.299999999999E-5, Total: 0.01382
+[2015-07-23 22:25:05]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:05]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:05]framework.database.initialize.before: 
+[2015-07-23 22:25:05]framework.database.initialize.after: mysql
+[2015-07-23 22:25:05]framework.cache.initialize.before: 
+[2015-07-23 22:25:05]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:05]framework.session.initialize.before: 
+[2015-07-23 22:25:05]framework.session.initialize.after: server
+[2015-07-23 22:25:06]framework.router.dispatch.before: home/index
+[2015-07-23 22:25:06]framework.controller.construct.before: Home
+[2015-07-23 22:25:06]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:06]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:06]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 22:25:06]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 22:25:06]framework.controller.construct.after: Home
+[2015-07-23 22:25:06]framework.router.dispatch.after: home/index, home, index
+Average: -0.045992625, Longest: 0.048961, Shortest: -0.791923, Total: -0.735793
+[2015-07-23 22:25:06]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:06]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:06]framework.database.initialize.before: 
+[2015-07-23 22:25:06]framework.database.initialize.after: mysql
+[2015-07-23 22:25:06]framework.cache.initialize.before: 
+[2015-07-23 22:25:06]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:06]framework.session.initialize.before: 
+[2015-07-23 22:25:06]framework.session.initialize.after: server
+[2015-07-23 22:25:06]framework.router.dispatch.before: home/index
+[2015-07-23 22:25:06]framework.controller.construct.before: Home
+[2015-07-23 22:25:06]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:06]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:06]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 22:25:06]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/index.html
+[2015-07-23 22:25:06]framework.controller.construct.after: Home
+[2015-07-23 22:25:06]framework.router.dispatch.after: home/index, home, index
+Average: 0.0054114375, Longest: 0.067192, Shortest: 7.4000000000018E-5, Total: 0.086679
+[2015-07-23 22:25:07]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:07]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:07]framework.database.initialize.before: 
+[2015-07-23 22:25:07]framework.database.initialize.after: mysql
+[2015-07-23 22:25:07]framework.cache.initialize.before: 
+[2015-07-23 22:25:07]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:07]framework.session.initialize.before: 
+[2015-07-23 22:25:07]framework.session.initialize.after: server
+[2015-07-23 22:25:07]framework.router.dispatch.before: about
+[2015-07-23 22:25:07]framework.router.dispatch.after: about, home, about
+[2015-07-23 22:25:07]framework.controller.construct.before: Home
+[2015-07-23 22:25:07]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:07]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:07]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/about.html
+[2015-07-23 22:25:07]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/about.html
+[2015-07-23 22:25:07]framework.controller.construct.after: Home
+Average: 0.001070875, Longest: 0.005719, Shortest: 7.299999999999E-5, Total: 0.027131
+[2015-07-23 22:25:07]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:07]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:07]framework.database.initialize.before: 
+[2015-07-23 22:25:07]framework.database.initialize.after: mysql
+[2015-07-23 22:25:07]framework.cache.initialize.before: 
+[2015-07-23 22:25:07]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:07]framework.session.initialize.before: 
+[2015-07-23 22:25:07]framework.session.initialize.after: server
+[2015-07-23 22:25:07]framework.router.dispatch.before: contact
+[2015-07-23 22:25:07]framework.router.dispatch.after: contact, home, contact
+[2015-07-23 22:25:07]framework.controller.construct.before: Home
+[2015-07-23 22:25:07]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:07]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:07]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/contact.html
+[2015-07-23 22:25:07]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/contact.html
+[2015-07-23 22:25:07]framework.controller.construct.after: Home
+Average: 0.0022650625, Longest: 0.011158, Shortest: 7.299999999999E-5, Total: 0.039868
+[2015-07-23 22:25:07]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:07]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:07]framework.database.initialize.before: 
+[2015-07-23 22:25:07]framework.database.initialize.after: mysql
+[2015-07-23 22:25:07]framework.cache.initialize.before: 
+[2015-07-23 22:25:07]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:07]framework.session.initialize.before: 
+[2015-07-23 22:25:07]framework.session.initialize.after: server
+[2015-07-23 22:25:07]framework.router.dispatch.before: login
+[2015-07-23 22:25:07]framework.router.dispatch.after: login, users, login
+[2015-07-23 22:25:07]framework.controller.construct.before: Users
+[2015-07-23 22:25:07]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:07]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:07]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/login.html
+[2015-07-23 22:25:07]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/login.html
+[2015-07-23 22:25:07]framework.controller.construct.after: Users
+Average: 0.0007395, Longest: 0.004526, Shortest: 7.1999999999961E-5, Total: 0.015682
+[2015-07-23 22:25:08]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:08]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:08]framework.database.initialize.before: 
+[2015-07-23 22:25:08]framework.database.initialize.after: mysql
+[2015-07-23 22:25:08]framework.cache.initialize.before: 
+[2015-07-23 22:25:08]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:08]framework.session.initialize.before: 
+[2015-07-23 22:25:08]framework.session.initialize.after: server
+[2015-07-23 22:25:08]framework.router.dispatch.before: customers/register
+[2015-07-23 22:25:08]framework.controller.construct.before: Customers
+[2015-07-23 22:25:08]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:08]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:08]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/customers/register.html
+[2015-07-23 22:25:08]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/customers/register.html
+[2015-07-23 22:25:08]framework.controller.construct.after: Customers
+[2015-07-23 22:25:08]framework.router.dispatch.after: customers/register, customers, register
+Average: 0.0009995, Longest: 0.005549, Shortest: 7.0999999999988E-5, Total: 0.016056
+[2015-07-23 22:25:08]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:08]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:08]framework.database.initialize.before: 
+[2015-07-23 22:25:08]framework.database.initialize.after: mysql
+[2015-07-23 22:25:08]framework.cache.initialize.before: 
+[2015-07-23 22:25:08]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:08]framework.session.initialize.before: 
+[2015-07-23 22:25:08]framework.session.initialize.after: server
+[2015-07-23 22:25:08]framework.router.dispatch.before: taskers/register
+[2015-07-23 22:25:08]framework.controller.construct.before: Taskers
+[2015-07-23 22:25:08]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:08]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:08]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/taskers/register.html
+[2015-07-23 22:25:08]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/taskers/register.html
+[2015-07-23 22:25:08]framework.controller.construct.after: Taskers
+[2015-07-23 22:25:08]framework.router.dispatch.after: taskers/register, taskers, register
+Average: 0.002527375, Longest: 0.027495, Shortest: 7.4000000000018E-5, Total: 0.040527
+[2015-07-23 22:25:08]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:08]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:08]framework.database.initialize.before: 
+[2015-07-23 22:25:08]framework.database.initialize.after: mysql
+[2015-07-23 22:25:08]framework.cache.initialize.before: 
+[2015-07-23 22:25:08]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:08]framework.session.initialize.before: 
+[2015-07-23 22:25:08]framework.session.initialize.after: server
+[2015-07-23 22:25:08]framework.router.dispatch.before: bookService
+[2015-07-23 22:25:08]framework.router.dispatch.after: bookService, users, bookService
+[2015-07-23 22:25:08]framework.controller.construct.before: Users
+[2015-07-23 22:25:08]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:08]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:08]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 22:25:08]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/users/bookService.html
+[2015-07-23 22:25:08]framework.controller.construct.after: Users
+Average: 0.000845875, Longest: 0.0059630000000001, Shortest: 7.0999999999932E-5, Total: 0.046481
+[2015-07-23 22:25:09]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:09]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:09]framework.database.initialize.before: 
+[2015-07-23 22:25:09]framework.database.initialize.after: mysql
+[2015-07-23 22:25:09]framework.cache.initialize.before: 
+[2015-07-23 22:25:09]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:09]framework.session.initialize.before: 
+[2015-07-23 22:25:09]framework.session.initialize.after: server
+[2015-07-23 22:25:09]framework.router.dispatch.before: terms
+[2015-07-23 22:25:09]framework.router.dispatch.after: terms, home, terms
+[2015-07-23 22:25:09]framework.controller.construct.before: Home
+[2015-07-23 22:25:09]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:09]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:09]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/terms.html
+[2015-07-23 22:25:09]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/terms.html
+[2015-07-23 22:25:09]framework.controller.construct.after: Home
+Average: 0.0026440625, Longest: 0.034879, Shortest: 7.3000000000101E-5, Total: 0.203676
+[2015-07-23 22:25:10]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:10]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:10]framework.database.initialize.before: 
+[2015-07-23 22:25:10]framework.database.initialize.after: mysql
+[2015-07-23 22:25:10]framework.cache.initialize.before: 
+[2015-07-23 22:25:10]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:10]framework.session.initialize.before: 
+[2015-07-23 22:25:10]framework.session.initialize.after: server
+[2015-07-23 22:25:10]framework.router.dispatch.before: privacy
+[2015-07-23 22:25:10]framework.router.dispatch.after: privacy, home, privacy
+[2015-07-23 22:25:10]framework.controller.construct.before: Home
+[2015-07-23 22:25:10]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:10]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:10]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/privacy.html
+[2015-07-23 22:25:10]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/privacy.html
+[2015-07-23 22:25:10]framework.controller.construct.after: Home
+Average: 0.004077125, Longest: 0.057494, Shortest: 8.8000000000088E-5, Total: 0.068427
+[2015-07-23 22:25:11]framework.configuration.initialize.before: ini
+[2015-07-23 22:25:11]framework.configuration.initialize.after: ini
+[2015-07-23 22:25:11]framework.database.initialize.before: 
+[2015-07-23 22:25:11]framework.database.initialize.after: mysql
+[2015-07-23 22:25:11]framework.cache.initialize.before: 
+[2015-07-23 22:25:11]framework.cache.initialize.after: memcached
+[2015-07-23 22:25:11]framework.session.initialize.before: 
+[2015-07-23 22:25:11]framework.session.initialize.after: server
+[2015-07-23 22:25:11]framework.router.dispatch.before: faq
+[2015-07-23 22:25:11]framework.router.dispatch.after: faq, home, faq
+[2015-07-23 22:25:11]framework.controller.construct.before: Home
+[2015-07-23 22:25:11]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:11]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/layouts/standard.html
+[2015-07-23 22:25:11]framework.view.construct.before: /home/content/32/11823432/html/tasksphere/application/views/home/faq.html
+[2015-07-23 22:25:11]framework.view.construct.after: /home/content/32/11823432/html/tasksphere/application/views/home/faq.html
+[2015-07-23 22:25:11]framework.controller.construct.after: Home
+Average: 0.0006465, Longest: 0.002667, Shortest: 7.3000000000004E-5, Total: 0.014034

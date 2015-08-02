@@ -1,7 +1,7 @@
 <div class="intro-inner">
     <div class="contact-intro">
         <div class="w100 map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1423809000824" width="100%" height="350" frameborder="0" style="border:0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112125.29806821776!2d77.2794856452947!3d28.5722980827729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce391b053aeef%3A0x3c66da6bc8fccdde!2sNew+Friends+Colony%2C+New+Delhi%2C+Delhi!5e0!3m2!1sen!2sin!4v1436519392978" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -39,34 +39,46 @@
             <div class="col-md-8">
                 <div class="contact-form">
                     <h5 class="list-title gray"><strong>Write your Query here</strong></h5>
+                    {if isset($success)}
+			          <div class="alert alert-success fade in">
+			          <button data-dismiss="alert" class="close close-sm" type="button">
+			          <i class="fa fa-times"></i>
+			          </button>
+			          <strong>Thanks!</strong> {echo $success}
+			          </div>
+			          {/if}
                     <form class="form-horizontal" method="post">
                         <fieldset>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <input id="firstname" name="name" type="text" placeholder="First Name" class="form-control">
+                                            <input id="firstname" name="fname" type="text" placeholder="First Name" class="form-control">
+                                             {echo Shared\Markup::errors($errors, "fname")}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <input id="lastname" name="name" type="text" placeholder="Last  Name" class="form-control">
+                                            <input id="lastname" name="lname" type="text" placeholder="Last  Name" class="form-control">
+                                             {echo Shared\Markup::errors($errors, "lname")}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <input id="companyname" name="name" type="text" placeholder="AreaCode" class="form-control">
+                                            <input id="companyname" name="pin" type="text" placeholder="AreaCode" class="form-control">
+                                             {echo Shared\Markup::errors($errors, "pin")}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                            <input id="email" name="email" type="email" placeholder="Email Address" class="form-control">
+                                             {echo Shared\Markup::errors($errors, "email")}
                                         </div>
                                     </div>
                                 </div>
@@ -74,10 +86,12 @@
                                     <div class="form-group">
                                         <div class="col-md-12">
                                             <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                                             {echo Shared\Markup::errors($errors, "message")}
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-md-12 ">
+                                        <input type="hidden" name="action" value="query">
                                             <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                                         </div>
                                     </div>
