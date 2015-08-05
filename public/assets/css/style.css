@@ -1822,3 +1822,12 @@ td.ads-details-td {
 	  width:300px;
   }
 }
+.whatsapp{
+	position : absolute;
+	right:10px;
+	bottom: 10px;
+	height:80px;
+	width:50px;
+	background-image: url('../images/whatsapp.jpg');
+	padding:20px;
+}
