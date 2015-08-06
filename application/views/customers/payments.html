@@ -58,7 +58,7 @@
 
                                     <div class="panel-body">
 
-                                        <form class="form-horizontal" role="form" method="post" action="">
+                                        <form class="form-horizontal" method="post" name="payuForm" action="">
 
                                             <div class="form-group">
 
@@ -94,7 +94,7 @@
                                                 </div>
 
                                             </div>
-                                            <input type="hidden" value="{script echo substr(hash('sha256', mt_rand() . microtime()), 0, 20)}" name="txnid"> 
+                                            <input type="hidden" value="{echo $txnid}" name="txnid"> 
                                             <input type="hidden" name="key" value="{echo $key}" >
                                             <input type="hidden" name="salt" value="{echo $salt}" >
                                             <input type="hidden" name="hash" value="{echo $hash}" >
@@ -104,7 +104,7 @@
 
                                                 <div class="col-sm-offset-3 col-sm-9">
 
-                                                    <button type="submit" class="btn btn-primary">Make Payment/button>
+                                                    <button type="submit" class="btn btn-primary">Make Payment</button>
 
                                                 </div>
 
