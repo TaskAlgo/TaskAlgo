@@ -160,6 +160,14 @@ $PAYU_BASE_URL = "https://test.payu.in";
         }
 
     }
+    
+        public function changeLayout() {
+
+        $this->defaultLayout = "layouts/standard";
+
+        $this->setLayout();
+
+    }
 
 
 

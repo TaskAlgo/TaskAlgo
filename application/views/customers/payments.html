@@ -96,6 +96,10 @@
                                             </div>
                                             <input type="hidden" value="{script echo substr(hash('sha256', mt_rand() . microtime()), 0, 20)}" name="txnid"> 
                                             <input type="hidden" name="key" value="{echo $key}" >
+                                            <input type="hidden" name="salt" value="{echo $salt}" >
+                                            <input type="hidden" name="hash" value="{echo $hash}" >
+                                            <input type="hidden" name="surl" value="http://www.taskspher.com/customer/payment_success">
+                                            <input type="hidden" name="furl" value="http://www.taskspher.com/customer/payment_failed">
                                             <div class="form-group">
 
                                                 <div class="col-sm-offset-3 col-sm-9">
