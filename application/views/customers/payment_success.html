@@ -1,0 +1,73 @@
+<div class="main-container">
+
+    <div class="container">
+
+        <div class="row">
+
+            {if(isset($success))}
+
+            <div class="col-md-12 page-content">
+
+                <div class="inner-box category-content">
+
+                    <div class="row">
+
+                        <div class="col-lg-12">
+
+                            <div class="alert alert-success pgray  alert-lg" role="alert">
+
+                                <p>{$success}</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {/if}
+
+            
+
+            {include layouts/navigation/user.html}
+
+
+
+            <div class="col-sm-9 page-content">
+
+                <div class="inner-box">
+
+                    <div class="welcome-msg">
+
+                        <h3 class="page-sub-header2 clearfix no-padding">Hello {$user->name} </h3>
+
+                        <div id="accordion" class="panel-group">
+
+                            <div class="panel panel-default">
+
+                                <div class="panel-heading">
+
+                                    <h4 class="panel-title"> <a href="#collapseB1" data-toggle="collapse"> Payment Successful </a> </h4>
+
+                                </div>
+
+                                <div class="panel-collapse collapse in" id="collapseB1">
+
+                                    <div class="panel-body">
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
