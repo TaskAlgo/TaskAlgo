@@ -130,7 +130,7 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
 
         ));
         
-        if(RequestMethods::post("status")!="success")
+        if(RequestMethods::post("status")=="failed" || RequestMethods::post("status")=="pending")
         {
            $hash= RequestMethods::post("hash"); 
            $payu_unique_id= RequestMethods::post("mihpayid");
