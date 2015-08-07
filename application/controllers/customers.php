@@ -69,7 +69,7 @@ public $SALT = "6zteiBW7";
         $view = $this->getActionView();
         // Merchant key here as provided by Payu
 $txn = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
-$amount =500;
+$amount =1;
 $service = "Service take By Tasksphere";
 $user = $this->user;
 $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "productinfo"=>$service, "firstname"=>$user->name, "email"=>$user->email];
@@ -117,7 +117,7 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
     }
 
     public function payment_failed() {
-
+        $this->changeLayout();
         $this->seo(array(
 
             "title" => "Happy Customers",
@@ -129,11 +129,33 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
             "view" => $this->getLayoutView()
 
         ));
-
         
-
+        if(RequestMethods::post("status")!="success")
+        {
+           $hash= RequestMethods::post("hash"); 
+           $payu_unique_id= RequestMethods::post("mihpayid");
+           $name = RequestMethods::post("firstname");
+           $mode = RequestMethods::post("mode");
+           $txnid = RequestMethods::post("txnid");
+           $amount = RequestMethods::post("amount");
+           $key = RequestMethods::post("key");
+           $payment_id = RequestMethods::post("payuMoneyId");
+           $other = RequestMethods::post("unmappedstatus");
+           if($mode="CC"){
+               $payment_mode = "Credit Debit Card";
+           }elseif ($mode="NB") {
+               $payment_mode = "Net Banking"; 
+            }
+            elseif ($mode="CD") {
+                $payment_mode = "Cheque DD";     
+        }  else {
+        $payment_mode = "Cash";    
+        }
+           $ret_par = ["hash"=>$hash, "payU Unique Id"=>$payu_unique_id,"name"=>$name, "Payment Mode"=>$payment_mode,"transaction  id"=>$txnid, "amount"=>$amount];
+        }
         $view = $this->getActionView();
-
+        $view->set("trans_failed", $ret_par);
+  
     }
 
 

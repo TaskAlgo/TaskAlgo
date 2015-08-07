@@ -57,7 +57,11 @@
                                 <div class="panel-collapse collapse in" id="collapseB1">
 
                                     <div class="panel-body">
-
+                                        {if isset($trans_failed)}
+                                        {foreach $transaction in $trans_failed}
+                                        <h5>$transaction</h5><br>
+                                        {/foreach}
+                                        {/if}
 
                                     </div>
 
