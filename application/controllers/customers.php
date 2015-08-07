@@ -41,6 +41,11 @@ class Customers extends Users {
         $view = $this->getActionView();
 
     }
+    /**
+     * 
+     * 
+     * @before _secure
+     */
 
     public function payments() {
         $this->changeLayout();
@@ -64,8 +69,10 @@ $MERCHANT_KEY = "2u0rmd";
 
 // Merchant Salt as provided by Payu
 $SALT = "6zteiBW7";
-
-$posted = ["key"=>$MERCHANT_KEY,"txnid"=>$txn, "amount"=>500, "productinfo"=>"Service take By Tasksphere", "firstname"=>"MERAJ AHMAD SIDDIQUI", "email"=>"msiddiqui.jmi@gmail.com"];
+$amount =1;
+$service = "Service take By Tasksphere";
+$user = $this->user;
+$posted = ["key"=>$MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "productinfo"=>$service, "firstname"=>$user->name, "email"=>$user->email];
     $hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5|udf6|udf7|udf8|udf9|udf10";
     $hashVarsSeq = explode('|', $hashSequence);
     $hash_string = '';	
