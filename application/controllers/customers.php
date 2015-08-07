@@ -57,18 +57,28 @@ class Customers extends Users {
         ));
         $view = $this->getActionView();
         // Merchant key here as provided by Payu
-$MERCHANT_KEY = "JBZaLc";
 $txn = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 // Merchant Salt as provided by Payu
-$SALT = "GQs7yium";
-// End point - change to https://secure.payu.in for LIVE mode
-$PAYU_BASE_URL = "https://test.payu.in";
+// Merchant key here as provided by Payu
+$MERCHANT_KEY = "2u0rmd";
+
+// Merchant Salt as provided by Payu
+$SALT = "6zteiBW7";
+
+$posted = ["key"=>$MERCHANT_KEY,"txnid"=>$txn, "amount"=>500, "productinfo"=>"Service take By Tasksphere", "firstname"=>"MERAJ AHMAD SIDDIQUI", "email"=>"msiddiqui.jmi@gmail.com"];
+    $hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5|udf6|udf7|udf8|udf9|udf10";
+    $hashVarsSeq = explode('|', $hashSequence);
+    $hash_string = '';	
+	foreach($hashVarsSeq as $hash_var) {
+      $hash_string .= isset($posted[$hash_var]) ? $posted[$hash_var] : '';
+      $hash_string .= '|';
+    }
+    $hash_string .= $SALT;
+    $hash = strtolower(hash('sha512', $hash_string));           
         $view->set("txnid", $txn);
         $view->set("key", $MERCHANT_KEY);
         $view->set("salt", $SALT);
-        $view->set("hash", $Hash);
-
-        $view = $this->getActionView();
+        $view->set("hash", $hash);
 
     }
 
