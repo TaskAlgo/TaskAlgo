@@ -130,9 +130,9 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
 
         ));
         
-        if(RequestMethods::post("status")=="failed" || RequestMethods::post("status")=="pending")
+        if(RequestMethods::post("status")!="success")
         {
-           $hash= RequestMethods::post("hash"); 
+           //$hash= RequestMethods::post("hash"); 
            $payu_unique_id= RequestMethods::post("mihpayid");
            $name = RequestMethods::post("firstname");
            $mode = RequestMethods::post("mode");
@@ -154,7 +154,11 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
            $ret_par = ["hash"=>$hash, "payU Unique Id"=>$payu_unique_id,"name"=>$name, "Payment Mode"=>$payment_mode,"transaction  id"=>$txnid, "amount"=>$amount];
         }
         $view = $this->getActionView();
-        $view->set("trans_failed", $ret_par);
+        $view->set("trans_failed", true);
+        $view->set("customer", $name);
+        $view->set("mode", $payment_mode);
+        $view->set("amount", $amount);
+        $view->set("txnid", $txnid);
   
     }
 
