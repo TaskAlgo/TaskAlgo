@@ -141,12 +141,12 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
            $key = RequestMethods::post("key");
            $payment_id = RequestMethods::post("payuMoneyId");
            $other = RequestMethods::post("unmappedstatus");
-           if($mode="CC"){
-               $payment_mode = "Credit Debit Card";
-           }elseif ($mode="NB") {
+           if($mode=="CC"){
+               $payment_mode = "Credit or Debit Card";
+           }elseif ($mode=="NB") {
                $payment_mode = "Net Banking"; 
             }
-            elseif ($mode="CD") {
+            elseif ($mode=="CD") {
                 $payment_mode = "Cheque DD";     
         }  else {
         $payment_mode = "Cash";    
