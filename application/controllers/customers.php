@@ -106,13 +106,15 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
 
         ));
         
-        
-        if(RequestMethods::post("status")=="success")
+        $view = $this->getActionView();
+        if(RequestMethods::post("status"))
         {
            $payu_unique_id= RequestMethods::post("mihpayid");
+           $status = RequestMethods::post("status");
            $name = RequestMethods::post("firstname");
            $payment_mode = RequestMethods::post("mode");
            $txnid = RequestMethods::post("txnid");
+           $product_info = RequestMethods::post("productinfo");
            $amount = RequestMethods::post("amount");
            $key = RequestMethods::post("key");
            $payment_id = RequestMethods::post("payuMoneyId");
@@ -124,15 +126,35 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
             }
             elseif ($mode=="CD") {
                 $payment_mode = "Cheque DD";     
-            }  else {
+            }elseif($mode=="CO"){
             $payment_mode = "Cash";    
             }
-            $view->set("customer", $name);
-            $view->set("mode", $payment_mode);
-            $view->set("amount", $amount);
-            $view->set("txnid", $txnid);
+        $view->set("trans_success", true);
+        $view->set("customer", $name);
+        $view->set("mode", $payment_mode);
+        $view->set("amount", $amount);
+        $view->set("txnid", $txnid);
+        
+        $paydb = Payment::first(array("transaction_no = ?"=>$txnid));
+        if(!$paydb){
+            $newPay = new Payment(array(
+                "user"=>$this->user->id,
+                "amount"=>$amount,
+                "job"=>1,
+                "transaction_no"=>$txnid,
+                "payment_mode"=>$payment_mode,
+                "payu_id"=>$payu_unique_id,
+                "product_info"=>$product_info,
+                "status"=>$status
+                ));
+                $newPay->save();
+            
+                }else{
+                    echo "the transction id allready exist ";
+                }
+            
         }
-        $view = $this->getActionView();
+   
     }
     /**
      * 
@@ -153,15 +175,17 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
 
         ));
         
-        
-        if(RequestMethods::post("status")!="success")
+         $view = $this->getActionView();
+        if(RequestMethods::post("status"))
         {
            //$hash= RequestMethods::post("hash"); 
+            $status = RequestMethods::post("status");
            $payu_unique_id= RequestMethods::post("mihpayid");
            $name = RequestMethods::post("firstname");
-           $mode = RequestMethods::post("mode");
+           $mode = RequestMethods::post("mode");         
            $txnid = RequestMethods::post("txnid");
            $amount = RequestMethods::post("amount");
+           $product_info = RequestMethods::post("productinfo");
            $key = RequestMethods::post("key");
            $payment_id = RequestMethods::post("payuMoneyId");
            $other = RequestMethods::post("unmappedstatus");
@@ -172,18 +196,38 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
             }
             elseif ($mode=="CD") {
                 $payment_mode = "Cheque DD";     
-        }  else {
-        $payment_mode = "Cash";    
-        }
+            }
+            elseif($mode=="CO") {
+            $payment_mode = "Cash";    
+            }
            $ret_par = ["hash"=>$hash, "payU Unique Id"=>$payu_unique_id,"name"=>$name, "Payment Mode"=>$payment_mode,"transaction  id"=>$txnid, "amount"=>$amount];
-        }
-        $view = $this->getActionView();
-        $view->set("trans_failed", true);
+           
+                   $view->set("trans_failed", true);
         $view->set("customer", $name);
         $view->set("mode", $payment_mode);
         $view->set("amount", $amount);
         $view->set("txnid", $txnid);
-  
+        
+        $paydb = Payment::first(array("transaction_no = ?"=>$txnid));
+        if(!$paydb){
+            $newPay = new Payment(array(
+                "user"=>$this->user->id,
+                "amount"=>$amount,
+                "job"=>1,
+                "transaction_no"=>$txnid,
+                "payment_mode"=>$payment_mode,
+                "payu_id"=>$payu_unique_id,
+                "product_info"=>$product_info,
+                "status"=>$status
+            ));
+            $newPay->save();
+            
+                }else{
+                    echo "the transction id allready exist ";
+                }
+        }
+       
+ 
     }
 
 

@@ -46,8 +46,6 @@ class Users extends Controller {
 
         $view = $this->getActionView();
 
-
-
         if (RequestMethods::post("action") == "saveUser") {
 
             $user = User::first(array("id = ?" => $this->user->id));
@@ -330,16 +328,16 @@ class Users extends Controller {
     }
 
 
-
+/*
     public function sync() {
 
         $this->noview();
 
         $db = Registry::get("database");
 
-        //$db->sync(new Task());
+        $db->sync(new Payment());
 
-    }
+    }*/
 
 
 

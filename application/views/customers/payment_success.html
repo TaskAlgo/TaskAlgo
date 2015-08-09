@@ -57,7 +57,22 @@
                                 <div class="panel-collapse collapse in" id="collapseB1">
 
                                     <div class="panel-body">
+                                        {if isset($trans_success)}
+                                        <div class="page-bottom-info">
 
+    <div class="page-bottom-info-inner">
+
+        <div class="page-bottom-info-content text-center">
+
+            <h2>Dear</h2><h1>{$customer}</h1> <h3> Your Payment of Rs. {$amount} by {$mode} has been succesful. Please note down the transaction ID <b style="color:red">{$txnid}</b>  for any reference.  with payU or our merchant  <a  target="_blank" href="http://swiftdeal.org/">Swiftdeal Online LLP</a>. <br/> For any further assistance and payment related issues call us at : +91-9971959105</h3> 
+
+            
+        </div>
+
+    </div>
+
+</div>
+                                        {/if}
 
                                     </div>
 
