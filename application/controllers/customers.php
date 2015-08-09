@@ -87,7 +87,11 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
         $view->set("hash", $hash);
 
     }
-
+    /**
+     * 
+     * 
+     * @before _secure
+     */
     public function payment_success() {
         $this->changeLayout();
         $this->seo(array(
@@ -112,10 +116,28 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
            $key = RequestMethods::post("key");
            $payment_id = RequestMethods::post("payuMoneyId");
            $other = RequestMethods::post("unmappedstatus");
+           if($mode=="CC"){
+               $payment_mode = "Credit or Debit Card";
+           }elseif ($mode=="NB") {
+               $payment_mode = "Net Banking"; 
+            }
+            elseif ($mode=="CD") {
+                $payment_mode = "Cheque DD";     
+            }  else {
+            $payment_mode = "Cash";    
+            }
+            $view->set("customer", $name);
+            $view->set("mode", $payment_mode);
+            $view->set("amount", $amount);
+            $view->set("txnid", $txnid);
         }
         $view = $this->getActionView();
     }
-
+    /**
+     * 
+     * 
+     * @before _secure
+     */
     public function payment_failed() {
         $this->changeLayout();
         $this->seo(array(
