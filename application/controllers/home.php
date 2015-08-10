@@ -71,6 +71,25 @@ class Home extends Controller {
         $view = $this->getActionView();
 
     }
+     public function blog() {
+
+        $this->seo(array(
+
+            "title" => "Blog::TaskSphere",
+
+            "keywords" => "TaskSphere, Blog, Coupon code, ",
+
+            "description" => "TaskSphere  blog page where you can know more about what are we doing",
+
+            "view" => $this->getLayoutView()
+
+        ));
+
+        
+
+        $view = $this->getActionView();
+
+    }
 
     
 
