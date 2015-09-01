@@ -164,43 +164,35 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
     public function payment_failed() {
         $this->changeLayout();
         $this->seo(array(
-
             "title" => "Happy Customers",
-
             "keywords" => "account",
-
             "description" => "account",
-
             "view" => $this->getLayoutView()
-
         ));
         
-         $view = $this->getActionView();
-        if(RequestMethods::post("status"))
-        {
-           //$hash= RequestMethods::post("hash"); 
+        $view = $this->getActionView();
+        if(RequestMethods::post("status")) {
+            //$hash= RequestMethods::post("hash");
             $status = RequestMethods::post("status");
-           $payu_unique_id= RequestMethods::post("mihpayid");
-           $name = RequestMethods::post("firstname");
-           $mode = RequestMethods::post("mode");         
-           $txnid = RequestMethods::post("txnid");
-           $amount = RequestMethods::post("amount");
-           $product_info = RequestMethods::post("productinfo");
-           $key = RequestMethods::post("key");
-           $payment_id = RequestMethods::post("payuMoneyId");
-           $other = RequestMethods::post("unmappedstatus");
-           if($mode=="CC"){
-               $payment_mode = "Credit or Debit Card";
-           }elseif ($mode=="NB") {
-               $payment_mode = "Net Banking"; 
+            $payu_unique_id= RequestMethods::post("mihpayid");
+            $name = RequestMethods::post("firstname");
+            $mode = RequestMethods::post("mode");
+            $txnid = RequestMethods::post("txnid");
+            $amount = RequestMethods::post("amount");
+            $product_info = RequestMethods::post("productinfo");
+            $key = RequestMethods::post("key");
+            $payment_id = RequestMethods::post("payuMoneyId");
+            $other = RequestMethods::post("unmappedstatus");
+            if($mode=="CC"){
+                $payment_mode = "Credit or Debit Card";
+            } elseif ($mode=="NB") {
+                $payment_mode = "Net Banking";
+            } elseif($mode=="CD") {
+                $payment_mode = "Cheque DD";
+            } elseif($mode=="CO") {
+                $payment_mode = "Cash";
             }
-            elseif ($mode=="CD") {
-                $payment_mode = "Cheque DD";     
-            }
-            elseif($mode=="CO") {
-            $payment_mode = "Cash";    
-            }
-           $ret_par = ["hash"=>$hash, "payU Unique Id"=>$payu_unique_id,"name"=>$name, "Payment Mode"=>$payment_mode,"transaction  id"=>$txnid, "amount"=>$amount];
+            $ret_par = ["hash"=>$hash, "payU Unique Id"=>$payu_unique_id,"name"=>$name, "Payment Mode"=>$payment_mode,"transaction  id"=>$txnid, "amount"=>$amount];
            
                    $view->set("trans_failed", true);
         $view->set("customer", $name);
@@ -222,73 +214,42 @@ $posted = ["key"=>$this->MERCHANT_KEY,"txnid"=>$txn, "amount"=>$amount, "product
             ));
             $newPay->save();
             
-                }else{
-                    echo "the transction id allready exist ";
-                }
+        }else{
+            echo "the transction id allready exist ";
         }
-       
- 
+        } 
     }
 
-
-
     public function register() {
-
         $this->seo(array(
-
             "title" => "Create Your account",
-
             "keywords" => "get free services, register",
-
             "description" => "create your account",
-
             "view" => $this->getLayoutView()
-
         ));
-
         $view = $this->getActionView();
 
-        
-
         if (RequestMethods::post("action") == "addCustomer") {
-
             $user = new User(array(
-
                 "name" => RequestMethods::post("name"),
-
                 "email" => RequestMethods::post("email", ""),
-
                 "phone" => RequestMethods::post("phone"),
-
                 "gender" => RequestMethods::post("gender", ""),
-
                 "password" => sha1(RequestMethods::post("password", rand(10000, 999999)))
-
             ));
-
             
-
             $user->save();
-
             $this->user = $user;
-
-            
-
             self::redirect("/users");
-
         }
 
     }
     
-        public function changeLayout() {
-
+    public function changeLayout() {
         $this->defaultLayout = "layouts/standard";
-
         $this->setLayout();
-
     }
 
 
 
 }
-

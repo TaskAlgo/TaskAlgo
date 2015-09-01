@@ -1,7 +1,5 @@
 <?php
 
-
-
 /**
 
  * Description of users
@@ -11,37 +9,24 @@
  * @author Faizan Ayubi
 
  */
-
 use Shared\Controller as Controller;
-
 use Framework\Registry as Registry;
-
 use Framework\RequestMethods as RequestMethods;
 
-
-
 class Users extends Controller {
-
-
 
     /**
 
      * @before _secure
 
      */
-
     public function index() {
 
         $this->seo(array(
-
             "title" => "Account",
-
             "keywords" => "Account",
-
             "description" => "Account",
-
             "view" => $this->getLayoutView()
-
         ));
 
         $view = $this->getActionView();
@@ -65,7 +50,6 @@ class Users extends Controller {
             $view->set("user", $user);
 
             $view->set("success", "Account Updated Successfully");
-
         }
 
 
@@ -83,37 +67,25 @@ class Users extends Controller {
                 $user->save();
 
                 $view->set("success", "Password Changed Successfulyy");
-
             } else {
 
                 $view->set("success", "Old Password incorrect, Try again");
-
             }
-
         }
-
     }
-
-
 
     /**
 
      * Logins the user to session and rediect to profile
 
      */
-
     public function login() {
 
         $this->seo(array(
-
             "title" => "TaskSphere",
-
             "keywords" => "TaskSphere",
-
             "description" => "TaskSphere",
-
             "view" => $this->getLayoutView()
-
         ));
 
 
@@ -133,11 +105,9 @@ class Users extends Controller {
             if (strpos($ep, "@")) {
 
                 $user = User::first(array("email = ?" => $ep, "password = ?" => sha1($password)));
-
             } else {
 
                 $user = User::first(array("phone = ?" => $ep, "password = ?" => sha1($password)));
-
             }
 
 
@@ -148,102 +118,69 @@ class Users extends Controller {
 
                 $manager = Manager::all(array("user = ?" => $user->id));
 
-                if($manager){
+                if ($manager) {
 
                     $session = Registry::get("session");
 
                     $session->set("manager", $manager);
-
                 }
 
                 self::redirect("/users");
-
             } else {
 
                 $view->set("success", "Incorrect email/phone or password");
-
             }
-
         }
-
     }
-
-    
 
     public function forgotpassword() {
 
         $this->seo(array(
-
             "title" => "TaskSphere",
-
             "keywords" => "TaskSphere",
-
             "description" => "TaskSphere",
-
             "view" => $this->getLayoutView()
-
         ));
 
 
 
         $view = $this->getActionView();
-
     }
-
-    
 
     public function close() {
 
         $this->seo(array(
-
             "title" => "TaskSphere",
-
             "keywords" => "TaskSphere",
-
             "description" => "TaskSphere",
-
             "view" => $this->getLayoutView()
-
         ));
 
 
 
         $view = $this->getActionView();
-
     }
 
-    
-
-    public function bookService($city=NULL, $taskid=NULL) {
-
+    public function bookService($city = NULL, $taskid = NULL) {
         $this->seo(array(
-
             "title" => "TaskSphere",
-
             "keywords" => "TaskSphere",
-
             "description" => "TaskSphere",
-
             "view" => $this->getLayoutView()
-
         ));
 
         $view = $this->getActionView();
-
         $zones = Zone::all(array("live = ?" => true), array("id", "landmark"));
 
         $tasks = Task::all(array("live = ?" => true), array("id", "title", "parent"));
-
-        if(RequestMethods::post("homebook")=="booknow"){
-             $task = RequestMethods::post("task");
-            $work = Task::first(array("live = ?" => true, "parent != ?" => 0, "id = ?"=>$task), array("id", "title"));
-             $view->set("work", $work);
+        if (RequestMethods::post("homebook") == "booknow") {
+            $task = RequestMethods::post("task");
+            $work = Task::first(array("live = ?" => true, "parent != ?" => 0, "id = ?" => $task), array("id", "title"));
+            $view->set("work", $work);
         }
 
 
-
-        if(RequestMethods::post("action") == "bookService"){
-
+        if (RequestMethods::post("action") == "bookService") {
             $city = RequestMethods::post("city");
             $taskid = RequestMethods::post("task");
             $location = new Location(array(
@@ -251,6 +188,19 @@ class Users extends Controller {
                 "zone" => RequestMethods::post("zone")
             ));
             $location->save();
+
+            if (!$this->user) {
+                $user = new User(array(
+                    "name" => RequestMethods::post("name"),
+                    "email" => RequestMethods::post("email", ""),
+                    "phone" => RequestMethods::post("phone"),
+                    "gender" => RequestMethods::post("gender", ""),
+                    "password" => sha1(RequestMethods::post("password", rand(10000, 999999)))
+                ));
+
+                $user->save();
+                $this->user = $user;
+            }
 
             $job = new Job(array(
                 "user" => $this->user->id,
@@ -263,83 +213,58 @@ class Users extends Controller {
             ));
             $job->save();
             self::redirect("/users/bookConfirm");
-        }      
+        }
 
         $view->set("taskid", $taskid);
-
         $view->set("tasks", $tasks);
-
         $view->set("zones", $zones);
-
     }
-
-    
 
     public function bookConfirm() {
-
         $this->seo(array(
-
             "title" => "TaskSphere",
-
             "keywords" => "TaskSphere",
-
             "description" => "TaskSphere",
-
             "view" => $this->getLayoutView()
-
         ));
 
-
-
         $view = $this->getActionView();
-
     }
-
-
 
     /**
 
      * Logs Out the User
 
      */
-
     public function logout() {
 
         $this->setUser(false);
 
         self::redirect("/home");
-
     }
-
-
 
     /**
 
      * Disabled HTML View
 
      */
-
     public function noview() {
 
         $this->willRenderLayoutView = false;
 
         $this->willRenderActionView = false;
-
     }
 
+    /*
+      public function sync() {
 
-/*
-    public function sync() {
+      $this->noview();
 
-        $this->noview();
+      $db = Registry::get("database");
 
-        $db = Registry::get("database");
+      $db->sync(new Payment());
 
-        $db->sync(new Payment());
-
-    }*/
-
-
+      } */
 
     /**
 
@@ -348,7 +273,6 @@ class Users extends Controller {
      * @param type $message any text to b logged
 
      */
-
     public function log($message = "") {
 
         $logfile = APP_PATH . "/logs/" . date("Y-m-d") . ".txt";
@@ -368,48 +292,38 @@ class Users extends Controller {
             if ($new) {
 
                 chmod($logfile, 0755);
-
             }
-
         } else {
 
             echo "Could not open log file for writing";
-
         }
-
     }
-    protected function validate_email($email)   
-    {
+
+    protected function validate_email($email) {
         $_email = explode("@", $email);
-        if(array_key_exists(1, $_email)){
-            $_url = "www.".$_email[1];
+        if (array_key_exists(1, $_email)) {
+            $_url = "www." . $_email[1];
             $result = checkdnsrr($_url);
-            if($result)
-            {
+            if ($result) {
                 define('PATTERN', '/^[\-\*\w\d\.]+$/');
                 return preg_match(PATTERN, $_email[0]) ? true : false;
             }
-        }
-        else{
+        } else {
             return false;
-        }   
-    }
-
-    protected function Validate_mobile($mobile){
-        if(empty($mobile))
-        {
-            return false;
-        }
-        if(!empty($mobile))
-        {
-                if((strlen($mobile)==10 && preg_match("/^[0-9]{10}$/", $mobile)))
-                {
-                    return true;
-                }
-                else{return false;}
         }
     }
 
+    protected function Validate_mobile($mobile) {
+        if (empty($mobile)) {
+            return false;
+        }
+        if (!empty($mobile)) {
+            if ((strlen($mobile) == 10 && preg_match("/^[0-9]{10}$/", $mobile))) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
 
 }
-
