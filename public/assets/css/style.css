@@ -582,7 +582,13 @@ hr.thin {
 .ads-details-info ul, .ads-details-info ol {
   margin-bottom: 20px;
 }
-
+.howitworks {
+    background: #dfdee0;
+    border-bottom: 5px solid #f89a19;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 30px;
+}
 .ads-details-info h4, .ads-details-info .h4, .ads-details-info h5, .h5, .ads-details-info h6, .ads-details-info .h6 {
   margin-bottom: 10px;
   padding-bottom: 0;
@@ -1830,4 +1836,53 @@ td.ads-details-td {
 	width:50px;
 	background-image: url('../images/whatsapp.jpg');
 	padding:20px;
+}
+  .recent-box1 {
+    padding-bottom: 30px;
+}
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1024px;
+}
+.custom-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.large-4 {
+    width: 33.33333%;
+}
+
+.columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+}
+
+.btnn {
+    background: none;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+    vertical-align: top;
+    appearance: none;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    border: 1px solid #04bab1;
+    color: black;
+    outline: none;
+    transition: all 0.075s linear;
 }

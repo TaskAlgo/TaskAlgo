@@ -1,4 +1,56 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<style>
+      .recent-box1 {
+    padding-bottom: 30px;
+}
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1024px;
+}
+.custom-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.large-4 {
+    width: 33.33333%;
+}
+
+.columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+}
+
+.btnn {
+    background: none;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+    vertical-align: top;
+    appearance: none;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    border: 1px solid #04bab1;
+    color: black;
+    outline: none;
+    transition: all 0.075s linear;
+}
+    
+</style>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -10,20 +62,23 @@
   <!-- Wrapper for slide -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="/public/assets/images/qwer.png" alt="Chania" class="img-responsive">
+      <img src="http://res.cloudinary.com/tasksphere/image/upload/v1449851159/qwe_glmo0w.png" alt="Chana" class="img-responsive">
+    </div>
+<!--public/assets/images/qwer.png
+/public/assets/images/qwe.png
+/public/assets/images/Un.png
+/public/assets/images/qq.png-->
+    <div class="item">
+      <img src="http://res.cloudinary.com/tasksphere/image/upload/v1449851155/ras_kqtpst.png" alt="Chania" class="img-responsive">
     </div>
 
     <div class="item">
-      <img src="/public/assets/images/qwe.png" alt="Chania" class="img-responsive">
+      <img src="http://res.cloudinary.com/tasksphere/image/upload/v1449851155/Un_jxayah.png" alt="Flower" class="img-responsive">
     </div>
 
-    <div class="item">
-      <img src="/public/assets/images/Un.png" alt="Flower" class="img-responsive">
-    </div>
-
-    <div class="item">
-      <img src="/public/assets/images/qq.png" alt="Flower" class="img-responsive">
-    </div>
+   <!-- <div class="item">
+      <img src="" alt="Flower" class="img-responsive">
+    </div>-->
   </div>
 
   <!-- Left and right controls -->
@@ -37,7 +92,80 @@
   </a>
 </div>
 
-
+<div class="recent-box1">
+	<div class="row">
+		<div class="large-4 medium-4 columns">
+                    
+			<div class="custom-item">
+				<a href="/home/blog">
+					<img src="http://res.cloudinary.com/tasksphere/image/upload/v1449886858/biryani_vmdvwj.jpg" width="353" height="300" alt="Biryani" />
+					<h3>Lunch</h3>
+				</a>								
+			</div>
+		</div>		
+		<div class="large-4 medium-4 columns">
+			<div class="custom-item">
+				<a href="/home/blog">
+				<img src="http://res.cloudinary.com/tasksphere/image/upload/c_scale,w_1920/v1449888705/Big-Burger-Wallpaper_vegavi.jpg" width="353" height="300" alt="Thai Green Curry Chicken " />
+					<h3>Snacks</h3>
+				</a>
+				<!--a href="/index.php?route=product/search&search=thai&type=food&page_chef=1&page=1">					
+					<img src="" width="314" height="353" alt="" />
+					<h3></h3>
+				</a>
+				<div class="price-info">
+					<span>Serves: <i></i> <cite>People</cite></span>
+					<span>Price: <i>₹0</i></span>
+				</div-->				
+			</div>
+		</div>
+		<div class="large-4 medium-4 columns">
+			<div class="custom-item">			    
+				<a href="/home/blog">
+					<img src="http://res.cloudinary.com/tasksphere/image/upload/c_scale,w_611/v1449889079/Tandoori-chicken-Cover_u6ajah.jpg" width="353" height="300" alt="Juice Pack ( 5 bottles of assorted juices)" />
+					<h3>Dinner</h3>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="recent-box1">
+	<div class="row">
+		<div class="large-4 medium-4 columns">
+                    
+			<div class="custom-item">
+				<a href="/home/resturant">
+					<img src="http://res.cloudinary.com/tasksphere/image/upload/c_scale,w_716/v1449892098/restaurant-hd_images_rvgdyb.jpg" width="353" height="300" alt="Biryani" />
+                                        <h3>Find Food From Resturants near You</h3>
+				</a>								
+			</div>
+		</div>		
+		<div class="large-4 medium-4 columns">
+			<div class="custom-item">
+				<a href="/home/delivery">
+				<img src="http://res.cloudinary.com/tasksphere/image/upload/v1449890876/grocery-shopping_bqprkk.jpg" width="353" height="300" alt="Thai Green Curry Chicken " />
+					<h3>Order Grocery Online</h3>
+				</a>
+				<!--a href="/index.php?route=product/search&search=thai&type=food&page_chef=1&page=1">					
+					<img src="" width="314" height="353" alt="" />
+					<h3></h3>
+				</a>
+				<div class="price-info">
+					<span>Serves: <i></i> <cite>People</cite></span>
+					<span>Price: <i>₹0</i></span>
+				</div-->				
+			</div>
+		</div>
+		<div class="large-4 medium-4 columns">
+			<div class="custom-item">			    
+				<a href="/home/delivery">
+					<img src="http://res.cloudinary.com/tasksphere/image/upload/v1449896737/Renault-Twizy-Cargo-Courier-Services-Above-View_nyigb9.jpg" width="353" height="300" alt="Juice Pack ( 5 bottles of assorted juices)" />
+					<h3>Pick and Deliver Service-Book Now</h3>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
 <!--  <div class="intro">
     __
     <div class="dtable hw100">
@@ -104,8 +232,7 @@
 
 </div>-->
 
-
-
+<!--
 <div class="main-container">
 
     <div class="container">
@@ -117,9 +244,9 @@
                 <div class="inner-box category-content">
 
                     <h2 class="title-2">Our Services  
-                     <!--   <span class="pull-right">
+                       <span class="pull-right">
                             <a href="whatsapp://send?text=Use TASKSPHER to get all your work done in minimum time by professional taskers. Get Electrician, Plumber, AC repair, Computer Repair , Packers and Movers and many other House keeping at http://tasksphere.com" data-action="share/whatsapp/share">Share via Whatsapp</a>
-                        </span>-->
+                        </span>
                     </h2>
 
                     <div class="row">
@@ -138,7 +265,7 @@
 
                                     <li> Groceries</li>
 
-                                    <li> Foods </li>
+                                    <li> Food </li>
 
                                     <li> Flowers </li>
 
@@ -170,7 +297,7 @@
                         <!--
                          <div class="whatsapp">
                             +91-9971959105
-                        </div> -->
+                        </div> 
 
                         <div class="col-md-4 col-sm-4">
 
@@ -281,7 +408,7 @@
 
                     </div>
 
-                </div>
+                </div> 
 
                 <div class="inner-box relative">
 
@@ -422,8 +549,20 @@
     </div>
 
 </div>
+-->
 
+  
 
+            
+       <!--    <a class="btn  btn-lg btn-primary-dark" href="tel:+91-9971959105">
+
+                <i class="icon-mobile"> <img src="{echo APP}public/assets/images/whatsapp.jpg"></i> <span class="hide-xs color50">Call Now <i>OR</i> WhatsApp US:</span> +91-9971959105 </a>
+-->
+       <div class="inner-box relative">
+
+                    
+                    <img src="http://res.cloudinary.com/tasksphere/image/upload/v1449895496/Untitlfgd_pa4akf.png" class="img-responsive">
+                </div>
 
 <div class="page-bottom-info">
 
@@ -431,7 +570,11 @@
 
         <div class="page-bottom-info-content text-center">
 
-            <h1>If you have any questions, comments or concerns, please call us at +91-9971959105</h1>
+            <i class="toolbox-icon"></i>
+    <h1 class="title-xxl mbottom10">We deliver to your office too</h1>
+    <p> We Organize lunch for the team. Need food for thought at a meeting? We have a team of specialists whose mission is to take the hassle out of doing just that. Just get in touch and we will take care of it.
+        For Details please call us at <b>9971959105</b></p>
+    <a href="/home/contact" class="btnn">Get In Touch</a>
 
        <!--    <a class="btn  btn-lg btn-primary-dark" href="tel:+91-9971959105">
 
@@ -441,4 +584,4 @@
 
     </div>
 
-</div>
+</div>  

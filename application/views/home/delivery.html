@@ -3,44 +3,16 @@
         <div class="row">
             <div class="col-md-9 page-content">
                 <div class="inner-box category-content">
-                    <h2 class="title-2 uppercase"><strong> <i class="icon-docs"></i> Book Your Order</strong> </h2>
+                    <h2 class="title-2 uppercase"><strong> <i class="icon-docs"></i> Schedule Pick up of Your Material</strong> </h2>
                     <div class="row">
                         <div class="col-sm-12">
                             <form class="form-horizontal" method="post" action="">
                                 <fieldset>
-                                    {if isset($work)}
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Select Your Food</label>
-                                        <div class="col-md-8">
-                                            <select name="task" id="category-group" class="form-control">
-                                                <option value="{$work->id}" selected="selected">{$work->title}</option>
-                                                {foreach $task in $tasks}
-                                                {if($task->parent != 0)}
-                                                <option value="{$task->id}">{$task->title}</option>
-                                                {/if}
-                                                {/foreach}
-                                            </select>
-                                        </div>
-                                    </div>
-                                    {/if}
-                                    {else}
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Select Your Food</label>
-                                        <div class="col-md-8">
-                                            <select name="task" id="category-group" class="form-control">
-                                                <option value="0" selected="selected"> Select a category... </option>
-                                                {foreach $task in $tasks}
-                                                {if($task->parent != 0)}
-                                                <option value="{$task->id}">{$task->title}</option>
-                                                {/if}
-                                                {/foreach}
-                                            </select>
-                                        </div>
-                                    </div>
+                                  
                                     <div class="form-group">
                                         <label class="col-md-3 control-label" for="comment"> Details about Your Order </label>
                                         <div class="col-md-8">
-                                            <textarea name="comment" class="form-control" id="comment"placeholder="Enter full name of food,quantity etc, see menu for details" >></textarea>
+                                            <textarea name="comment" class="form-control" id="comment"placeholder="Pick Up time,Quantity,Approx Weight etc " ></textarea>
                                         </div>
                                     </div>
                                     {/else}
@@ -68,23 +40,7 @@
                                     <!---Database needs to be modified -->
                                     
                                     
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Promotional">Promo Code(Optional)</label>
-                                        <div class="col-md-4">
-                                            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-money"></i></span>
-                                                <input id="Promotional" name="Price" class="form-control" type="text">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <button type="button" class="btn btn-success btn-sm">Apply</button>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                    </div>
+                                 
 
                                     {if(!$user)}
                                     <div class="content-subheading"> <i class="icon-user fa"></i> <strong>User Information</strong> </div>
@@ -125,7 +81,7 @@
 
                                     <div class="form-group">
                                         <label class="col-md-3 control-label"></label>
-                                        <div class="col-md-8"><button type="submit" id="button1id" class="btn btn-success btn-lg pull-right">Confirm Booking</button></div>
+                                        <div class="col-md-8"><button type="submit" id="button1id" class="btn btn-success btn-lg pull-right">Book Now</button></div>
                                     </div>
                                 </fieldset>
                                 <input type="hidden" name="action" value="bookService">

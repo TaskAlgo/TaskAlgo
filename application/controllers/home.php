@@ -192,6 +192,63 @@ class Home extends Controller {
         $view = $this->getActionView();
 
     }
+    public function resturant() {
+
+        $this->seo(array(
+
+            "title" => "TaskSphere",
+
+            "keywords" => "TaskSphere",
+
+            "description" => "TaskSphere",
+
+            "view" => $this->getLayoutView()
+
+        ));
+
+        
+
+        $view = $this->getActionView();
+
+    }
+     public function grocery() {
+
+        $this->seo(array(
+
+            "title" => "TaskSphere",
+
+            "keywords" => "TaskSphere",
+
+            "description" => "TaskSphere",
+
+            "view" => $this->getLayoutView()
+
+        ));
+
+        
+
+        $view = $this->getActionView();
+
+    }
+    public function delivery() {
+
+        $this->seo(array(
+
+            "title" => "TaskSphere",
+
+            "keywords" => "TaskSphere",
+
+            "description" => "TaskSphere",
+
+            "view" => $this->getLayoutView()
+
+        ));
+
+        
+
+        $view = $this->getActionView();
+
+    }
 
 }
 
